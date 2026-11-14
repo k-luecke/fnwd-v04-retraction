@@ -1,0 +1,1239 @@
+{
+  "metadata": {
+    "title": "FNWD Reconciled Idempotent Catalog",
+    "timestamp": "2026-10-11 10:02:10",
+    "total_evaluated": 70,
+    "summary_status_counts": {
+      "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT": 40,
+      "EMPIRICALLY_VALIDATED_RETRACTION": 28,
+      "REFUTED_ALIASING_COUNTEREXAMPLE": 2
+    },
+    "epistemic_standards": {
+      "universal_theorems": "Requires exact symbolic proof across all register and memory coordinates. Pure-register theorems are defined over modular states in Z/4093Z; raw integer scalar domains require explicit modular reduction on register writes.",
+      "empirical_retractions": "Survives 1,000 unconstrained random trials + 64 adversarial aliasing sweeps under declared contract.",
+      "refuted_candidates": "Fails on at least one admissible state configuration with explicit minimal counterexample."
+    }
+  },
+  "catalog": [
+    {
+      "topology_id": "top_e1acd82d541ada42",
+      "canonical_bytecode_hex": "67020200030402020004010300",
+      "disassembly": "OP_2(2, 0, 3); OP_4(2, 2, 0); OP_4(1, 3, 0)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_7fd65230b4ec9087",
+      "canonical_bytecode_hex": "670a000100020103020a030700",
+      "disassembly": "OP_10(0, 1, 0); OP_2(1, 3, 2); OP_10(3, 7, 0)",
+      "instruction_count": 3,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_95ff89e7b5af95e1",
+      "canonical_bytecode_hex": "67010201010b020603",
+      "disassembly": "OP_1(2, 1, 1); OP_11(2, 6, 3)",
+      "instruction_count": 2,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_975937e2abb12b69",
+      "canonical_bytecode_hex": "670400020002030001",
+      "disassembly": "OP_4(0, 2, 0); OP_2(3, 0, 1)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_b848c64d69b86a55",
+      "canonical_bytecode_hex": "6707050003030200000103000004010300",
+      "disassembly": "OP_7(5, 0, 3); OP_3(2, 0, 0); OP_1(3, 0, 0); OP_4(1, 3, 0)",
+      "instruction_count": 4,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_366903299d33f8bd",
+      "canonical_bytecode_hex": "6708067a00020201010a010300",
+      "disassembly": "OP_8(6, 122, 0); OP_2(2, 1, 1); OP_10(1, 3, 0)",
+      "instruction_count": 3,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_15d39dbc522998a4",
+      "canonical_bytecode_hex": "6702020101020302020102000006050403040303000102030301010003",
+      "disassembly": "OP_2(2, 1, 1); OP_2(3, 2, 2); OP_1(2, 0, 0); OP_6(5, 4, 3); OP_4(3, 3, 0); OP_1(2, 3, 3); OP_1(1, 0, 3)",
+      "instruction_count": 7,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_1739bf5a5b120d0f",
+      "canonical_bytecode_hex": "67030200030102000001030202030103000101020201030202010100010905000003010004",
+      "disassembly": "OP_3(2, 0, 3); OP_1(2, 0, 0); OP_1(3, 2, 2); OP_3(1, 3, 0); OP_1(1, 2, 2); OP_1(3, 2, 2); OP_1(1, 0, 1); OP_9(5, 0, 0); OP_3(1, 0, 4)",
+      "instruction_count": 9,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_fa85ff2ac2c10055",
+      "canonical_bytecode_hex": "670a0400000805020001020101050500030b06050001010202040102000301030003030203030102030201010201020101040201000102000001030101010102030302000303030203010102030401030003010200020202010101010301020101030201040301020301010002",
+      "disassembly": "OP_10(4, 0, 0); OP_8(5, 2, 0); OP_1(2, 1, 1); OP_5(5, 0, 3); OP_11(6, 5, 0); OP_1(1, 2, 2); OP_4(1, 2, 0); OP_3(1, 3, 0); OP_3(3, 2, 3); OP_3(1, 2, 3); OP_2(1, 1, 2); OP_1(2, 1, 1); OP_4(2, 1, 0); OP_1(2, 0, 0); OP_1(3, 1, 1); OP_1(1, 2, 3); OP_3(2, 0, 3); OP_3(3, 2, 3); OP_1(1, 2, 3); OP_4(1, 3, 0); OP_3(1, 2, 0); OP_2(2, 2, 1); OP_1(1, 1, 3); OP_1(2, 1, 1); OP_3(2, 1, 4); OP_3(1, 2, 3); OP_1(1, 0, 2)",
+      "instruction_count": 27,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_WRITE_ORDER_INVARIANT",
+      "admissible_execution_contract": "Contract M_write_precedence: write precedes read with static address registers, preserving idempotence across all aliasing conditions",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_d0de7f3a5dd5ac45",
+      "canonical_bytecode_hex": "6705010002050703060605050108054d00",
+      "disassembly": "OP_5(1, 0, 2); OP_5(7, 3, 6); OP_6(5, 5, 1); OP_8(5, 77, 0)",
+      "instruction_count": 4,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_584ff128ad9c1593",
+      "canonical_bytecode_hex": "670103010208012e000b02070607050207",
+      "disassembly": "OP_1(3, 1, 2); OP_8(1, 46, 0); OP_11(2, 7, 6); OP_7(5, 2, 7)",
+      "instruction_count": 4,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_1f9e93973ccad58e",
+      "canonical_bytecode_hex": "67010200000403020007050003070600050905020003010204020201000403020004010300020102000101000201010102010102020b05000004010000",
+      "disassembly": "OP_1(2, 0, 0); OP_4(3, 2, 0); OP_7(5, 0, 3); OP_7(6, 0, 5); OP_9(5, 2, 0); OP_3(1, 2, 4); OP_2(2, 1, 0); OP_4(3, 2, 0); OP_4(1, 3, 0); OP_2(1, 2, 0); OP_1(1, 0, 2); OP_1(1, 1, 2); OP_1(1, 2, 2); OP_11(5, 0, 0); OP_4(1, 0, 0)",
+      "instruction_count": 15,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_63d25f004bfcec6e",
+      "canonical_bytecode_hex": "67020201010905000007060405010100020103000203020000010301020402000009050000050600050401020004010300030302040201000304010200030200040905020006060305060500030a050300010102020101020204010300060503000a05000003010005030102040505000408060200010202020102000001020101020301020301030301010102030102000301020302010200",
+      "disassembly": "OP_2(2, 1, 1); OP_9(5, 0, 0); OP_7(6, 4, 5); OP_1(1, 0, 2); OP_1(3, 0, 2); OP_3(2, 0, 0); OP_1(3, 1, 2); OP_4(2, 0, 0); OP_9(5, 0, 0); OP_5(6, 0, 5); OP_4(1, 2, 0); OP_4(1, 3, 0); OP_3(3, 2, 4); OP_2(1, 0, 3); OP_4(1, 2, 0); OP_3(2, 0, 4); OP_9(5, 2, 0); OP_6(6, 3, 5); OP_6(5, 0, 3); OP_10(5, 3, 0); OP_1(1, 2, 2); OP_1(1, 2, 2); OP_4(1, 3, 0); OP_6(5, 3, 0); OP_10(5, 0, 0); OP_3(1, 0, 5); OP_3(1, 2, 4); OP_5(5, 0, 4); OP_8(6, 2, 0); OP_1(2, 2, 2); OP_1(2, 0, 0); OP_1(2, 1, 1); OP_2(3, 1, 2); OP_3(1, 3, 3); OP_1(1, 1, 2); OP_3(1, 2, 0); OP_3(1, 2, 3); OP_2(1, 2, 0)",
+      "instruction_count": 38,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_39e4d57bc1c9dd63",
+      "canonical_bytecode_hex": "670102000009050000080603000907000003030207020200000605040503010003",
+      "disassembly": "OP_1(2, 0, 0); OP_9(5, 0, 0); OP_8(6, 3, 0); OP_9(7, 0, 0); OP_3(3, 2, 7); OP_2(2, 0, 0); OP_6(5, 4, 5); OP_3(1, 0, 3)",
+      "instruction_count": 8,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_4ab8cb5b792afe6f",
+      "canonical_bytecode_hex": "67010200000403020003010200090500000103010202020201030200000102000104030200030103040401020002030201090503000301030403010304010200000403020003020104030301040201020303010300",
+      "disassembly": "OP_1(2, 0, 0); OP_4(3, 2, 0); OP_3(1, 2, 0); OP_9(5, 0, 0); OP_1(3, 1, 2); OP_2(2, 2, 1); OP_3(2, 0, 0); OP_1(2, 0, 1); OP_4(3, 2, 0); OP_3(1, 3, 4); OP_4(1, 2, 0); OP_2(3, 2, 1); OP_9(5, 3, 0); OP_3(1, 3, 4); OP_3(1, 3, 4); OP_1(2, 0, 0); OP_4(3, 2, 0); OP_3(2, 1, 4); OP_3(3, 1, 4); OP_2(1, 2, 3); OP_3(1, 3, 0)",
+      "instruction_count": 21,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_4a88af1a6d8d499e",
+      "canonical_bytecode_hex": "67010201010103000201020101040300000202000003010204",
+      "disassembly": "OP_1(2, 1, 1); OP_1(3, 0, 2); OP_1(2, 1, 1); OP_4(3, 0, 0); OP_2(2, 0, 0); OP_3(1, 2, 4)",
+      "instruction_count": 6,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_01f32d5e71e47f33",
+      "canonical_bytecode_hex": "67020200000101020209050200040302000b05000005060505040200000a0603000b07040004010000",
+      "disassembly": "OP_2(2, 0, 0); OP_1(1, 2, 2); OP_9(5, 2, 0); OP_4(3, 2, 0); OP_11(5, 0, 0); OP_5(6, 5, 5); OP_4(2, 0, 0); OP_10(6, 3, 0); OP_11(7, 4, 0); OP_4(1, 0, 0)",
+      "instruction_count": 10,
+      "proof_status": "REFUTED_ALIASING_COUNTEREXAMPLE",
+      "operational_class": "MEMORY_READ_WRITE_ALIASING_SENSITIVE",
+      "admissible_execution_contract": "Admissible only when memory addresses do not alias mod 64 (refuted on general state)",
+      "tests_passed": {
+        "random_1000_unconstrained": false,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": {
+        "trial": 49,
+        "input_g": [
+          3183,
+          2541,
+          2727,
+          249
+        ],
+        "input_s": [
+          604,
+          2334,
+          3172,
+          2691,
+          1604,
+          349,
+          1960,
+          1428
+        ],
+        "output_T_g": [
+          3183,
+          910,
+          910,
+          0
+        ],
+        "output_T_s": [
+          604,
+          2334,
+          3172,
+          2691,
+          1604,
+          1262,
+          2524,
+          1954
+        ],
+        "output_T2_g": [
+          3183,
+          910,
+          910,
+          0
+        ],
+        "output_T2_s": [
+          604,
+          2334,
+          3172,
+          2691,
+          1604,
+          2691,
+          1289,
+          1954
+        ],
+        "diff_dimension": "REGISTER"
+      },
+      "refutation_rationale": "Reads memory (OP_MEM_LOOKUP) prior to writing memory (OP_MEM_STORE). When read address S_j and write address S_k alias mod 64 (S_j = S_k mod 64), step 1 reads the pre-existing cell value before overwriting it with S_k. Step 2 then reads the newly written S_k, producing a strict state divergence S'' != S'."
+    },
+    {
+      "topology_id": "top_01b354ba38dfe2f9",
+      "canonical_bytecode_hex": "6703020100030301040905000003020100060604030807020004030200010200000102000004020000020200010103000202010201010202020101010301010003020102000303020304020000040302000301020002010002",
+      "disassembly": "OP_3(2, 1, 0); OP_3(3, 1, 4); OP_9(5, 0, 0); OP_3(2, 1, 0); OP_6(6, 4, 3); OP_8(7, 2, 0); OP_4(3, 2, 0); OP_1(2, 0, 0); OP_1(2, 0, 0); OP_4(2, 0, 0); OP_2(2, 0, 1); OP_1(3, 0, 2); OP_2(1, 2, 1); OP_1(2, 2, 2); OP_1(1, 1, 3); OP_1(1, 0, 3); OP_2(1, 2, 0); OP_3(3, 2, 3); OP_4(2, 0, 0); OP_4(3, 2, 0); OP_3(1, 2, 0); OP_2(1, 0, 2)",
+      "instruction_count": 22,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_e446e218b403c6d1",
+      "canonical_bytecode_hex": "67030200030102000001030202030103000101020201030202010101030905000003010004",
+      "disassembly": "OP_3(2, 0, 3); OP_1(2, 0, 0); OP_1(3, 2, 2); OP_3(1, 3, 0); OP_1(1, 2, 2); OP_1(3, 2, 2); OP_1(1, 1, 3); OP_9(5, 0, 0); OP_3(1, 0, 4)",
+      "instruction_count": 9,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_12ee533c774e25a8",
+      "canonical_bytecode_hex": "6703020004020201010203020103010200020101020303020001010202010100020301020303020303010302020905020001010303",
+      "disassembly": "OP_3(2, 0, 4); OP_2(2, 1, 1); OP_2(3, 2, 1); OP_3(1, 2, 0); OP_2(1, 1, 2); OP_3(3, 2, 0); OP_1(1, 2, 2); OP_1(1, 0, 2); OP_3(1, 2, 3); OP_3(2, 3, 3); OP_1(3, 2, 2); OP_9(5, 2, 0); OP_1(1, 3, 3)",
+      "instruction_count": 13,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_dc7c4f534324a5cd",
+      "canonical_bytecode_hex": "67010200000805050002030100020200020202000004030200020103000506030503010106",
+      "disassembly": "OP_1(2, 0, 0); OP_8(5, 5, 0); OP_2(3, 1, 0); OP_2(2, 0, 2); OP_2(2, 0, 0); OP_4(3, 2, 0); OP_2(1, 3, 0); OP_5(6, 3, 5); OP_3(1, 1, 6)",
+      "instruction_count": 9,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_a3f4574e961e93c8",
+      "canonical_bytecode_hex": "67030200000a00040002030101030202040705000403010205",
+      "disassembly": "OP_3(2, 0, 0); OP_10(0, 4, 0); OP_2(3, 1, 1); OP_3(2, 2, 4); OP_7(5, 0, 4); OP_3(1, 2, 5)",
+      "instruction_count": 6,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_78969f1ba5a72dc5",
+      "canonical_bytecode_hex": "670a0400000805020001020101050500030b06050001010202040102000301030003030203030102030201010201020101040201000102000001030101010102030302000303030203010102020401030003010200020202010101010301020101030201040301020301010002",
+      "disassembly": "OP_10(4, 0, 0); OP_8(5, 2, 0); OP_1(2, 1, 1); OP_5(5, 0, 3); OP_11(6, 5, 0); OP_1(1, 2, 2); OP_4(1, 2, 0); OP_3(1, 3, 0); OP_3(3, 2, 3); OP_3(1, 2, 3); OP_2(1, 1, 2); OP_1(2, 1, 1); OP_4(2, 1, 0); OP_1(2, 0, 0); OP_1(3, 1, 1); OP_1(1, 2, 3); OP_3(2, 0, 3); OP_3(3, 2, 3); OP_1(1, 2, 2); OP_4(1, 3, 0); OP_3(1, 2, 0); OP_2(2, 2, 1); OP_1(1, 1, 3); OP_1(2, 1, 1); OP_3(2, 1, 4); OP_3(1, 2, 3); OP_1(1, 0, 2)",
+      "instruction_count": 27,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_WRITE_ORDER_INVARIANT",
+      "admissible_execution_contract": "Contract M_write_precedence: write precedes read with static address registers, preserving idempotence across all aliasing conditions",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_becdf09f6d589d7a",
+      "canonical_bytecode_hex": "670302000002030001020201010402000004030200040200000905000005060005040102000905000007060405",
+      "disassembly": "OP_3(2, 0, 0); OP_2(3, 0, 1); OP_2(2, 1, 1); OP_4(2, 0, 0); OP_4(3, 2, 0); OP_4(2, 0, 0); OP_9(5, 0, 0); OP_5(6, 0, 5); OP_4(1, 2, 0); OP_9(5, 0, 0); OP_7(6, 4, 5)",
+      "instruction_count": 11,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_beeb7a9b751d5108",
+      "canonical_bytecode_hex": "6706050300040201000b0500000302000509060000070705060302020301030000080505000a05030003010003",
+      "disassembly": "OP_6(5, 3, 0); OP_4(2, 1, 0); OP_11(5, 0, 0); OP_3(2, 0, 5); OP_9(6, 0, 0); OP_7(7, 5, 6); OP_3(2, 2, 3); OP_1(3, 0, 0); OP_8(5, 5, 0); OP_10(5, 3, 0); OP_3(1, 0, 3)",
+      "instruction_count": 11,
+      "proof_status": "REFUTED_ALIASING_COUNTEREXAMPLE",
+      "operational_class": "MEMORY_READ_WRITE_ALIASING_SENSITIVE",
+      "admissible_execution_contract": "Admissible only when memory addresses do not alias mod 64 (refuted on general state)",
+      "tests_passed": {
+        "random_1000_unconstrained": false,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": {
+        "trial": 57,
+        "input_g": [
+          3118,
+          1785,
+          1512,
+          3165
+        ],
+        "input_s": [
+          2885,
+          3381,
+          450,
+          4053,
+          3782,
+          1597,
+          1509,
+          1678
+        ],
+        "output_T_g": [
+          3118,
+          2163,
+          658,
+          2143
+        ],
+        "output_T_s": [
+          2885,
+          3381,
+          450,
+          4053,
+          3782,
+          5,
+          2536,
+          2308
+        ],
+        "output_T2_g": [
+          3118,
+          2163,
+          3526,
+          2143
+        ],
+        "output_T2_s": [
+          2885,
+          3381,
+          450,
+          4053,
+          3782,
+          5,
+          2536,
+          885
+        ],
+        "diff_dimension": "REGISTER"
+      },
+      "refutation_rationale": "Reads memory (OP_MEM_LOOKUP) prior to writing memory (OP_MEM_STORE). When read address S_j and write address S_k alias mod 64 (S_j = S_k mod 64), step 1 reads the pre-existing cell value before overwriting it with S_k. Step 2 then reads the newly written S_k, producing a strict state divergence S'' != S'."
+    },
+    {
+      "topology_id": "top_0d6347ef11576261",
+      "canonical_bytecode_hex": "67010200000905020001010102030102030301020303020103030302000905030001010002010101030302000002020100040302000401030002010200010300020402010001020000010301010101020303020003030302030101020204010300010201030201020302010002010200020805070004010300",
+      "disassembly": "OP_1(2, 0, 0); OP_9(5, 2, 0); OP_1(1, 1, 2); OP_3(1, 2, 3); OP_3(1, 2, 3); OP_3(2, 1, 3); OP_3(3, 2, 0); OP_9(5, 3, 0); OP_1(1, 0, 2); OP_1(1, 1, 3); OP_3(2, 0, 0); OP_2(2, 1, 0); OP_4(3, 2, 0); OP_4(1, 3, 0); OP_2(1, 2, 0); OP_1(3, 0, 2); OP_4(2, 1, 0); OP_1(2, 0, 0); OP_1(3, 1, 1); OP_1(1, 2, 3); OP_3(2, 0, 3); OP_3(3, 2, 3); OP_1(1, 2, 2); OP_4(1, 3, 0); OP_1(2, 1, 3); OP_2(1, 2, 3); OP_2(1, 0, 2); OP_1(2, 0, 2); OP_8(5, 7, 0); OP_4(1, 3, 0)",
+      "instruction_count": 30,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_fb352be1eef36e38",
+      "canonical_bytecode_hex": "67020201000402000001030102010102020102010203030203030201000a04030002010202",
+      "disassembly": "OP_2(2, 1, 0); OP_4(2, 0, 0); OP_1(3, 1, 2); OP_1(1, 2, 2); OP_1(2, 1, 2); OP_3(3, 2, 3); OP_3(2, 1, 0); OP_10(4, 3, 0); OP_2(1, 2, 2)",
+      "instruction_count": 9,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_0a5f84135f71ee11",
+      "canonical_bytecode_hex": "670202000102020000010302020201020001010002040102000401020001010202030302000a04040007050003070600030905010001020000020302000102010101010102040102000301020501010202",
+      "disassembly": "OP_2(2, 0, 1); OP_2(2, 0, 0); OP_1(3, 2, 2); OP_2(1, 2, 0); OP_1(1, 0, 2); OP_4(1, 2, 0); OP_4(1, 2, 0); OP_1(1, 2, 2); OP_3(3, 2, 0); OP_10(4, 4, 0); OP_7(5, 0, 3); OP_7(6, 0, 3); OP_9(5, 1, 0); OP_1(2, 0, 0); OP_2(3, 2, 0); OP_1(2, 1, 1); OP_1(1, 1, 2); OP_4(1, 2, 0); OP_3(1, 2, 5); OP_1(1, 2, 2)",
+      "instruction_count": 20,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_f22b0b73a7c07e8b",
+      "canonical_bytecode_hex": "670705000001020000010301020301020301010202010102020a0005000202010102030201010200000101010203030200030103030201020104010200010100020103010202010102030201030806050003020104010301020201000302010200",
+      "disassembly": "OP_7(5, 0, 0); OP_1(2, 0, 0); OP_1(3, 1, 2); OP_3(1, 2, 3); OP_1(1, 2, 2); OP_1(1, 2, 2); OP_10(0, 5, 0); OP_2(2, 1, 1); OP_2(3, 2, 1); OP_1(2, 0, 0); OP_1(1, 1, 2); OP_3(3, 2, 0); OP_3(1, 3, 3); OP_2(1, 2, 1); OP_4(1, 2, 0); OP_1(1, 0, 2); OP_1(3, 1, 2); OP_2(1, 1, 2); OP_3(2, 1, 3); OP_8(6, 5, 0); OP_3(2, 1, 4); OP_1(3, 1, 2); OP_2(1, 0, 3); OP_2(1, 2, 0)",
+      "instruction_count": 24,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_42da80c027788f79",
+      "canonical_bytecode_hex": "670302000009050200040102000403010001020101050500030b0605000102030301010203010100020103000002010202",
+      "disassembly": "OP_3(2, 0, 0); OP_9(5, 2, 0); OP_4(1, 2, 0); OP_4(3, 1, 0); OP_1(2, 1, 1); OP_5(5, 0, 3); OP_11(6, 5, 0); OP_1(2, 3, 3); OP_1(1, 2, 3); OP_1(1, 0, 2); OP_1(3, 0, 0); OP_2(1, 2, 2)",
+      "instruction_count": 12,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_640f7888ae79ac5c",
+      "canonical_bytecode_hex": "67080505000102000005060305020302010302000001020001040102000301020002010200",
+      "disassembly": "OP_8(5, 5, 0); OP_1(2, 0, 0); OP_5(6, 3, 5); OP_2(3, 2, 1); OP_3(2, 0, 0); OP_1(2, 0, 1); OP_4(1, 2, 0); OP_3(1, 2, 0); OP_2(1, 2, 0)",
+      "instruction_count": 9,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_e10d5542d12897bc",
+      "canonical_bytecode_hex": "67050503030302010002030201090600000607050302020000020301020101020204030200010101030103020203010300080505000302010501010002",
+      "disassembly": "OP_5(5, 3, 3); OP_3(2, 1, 0); OP_2(3, 2, 1); OP_9(6, 0, 0); OP_6(7, 5, 3); OP_2(2, 0, 0); OP_2(3, 1, 2); OP_1(1, 2, 2); OP_4(3, 2, 0); OP_1(1, 1, 3); OP_1(3, 2, 2); OP_3(1, 3, 0); OP_8(5, 5, 0); OP_3(2, 1, 5); OP_1(1, 0, 2)",
+      "instruction_count": 15,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_ce5da258f4d47ef6",
+      "canonical_bytecode_hex": "67090500000402000001030000030202050b0604000707030504010000",
+      "disassembly": "OP_9(5, 0, 0); OP_4(2, 0, 0); OP_1(3, 0, 0); OP_3(2, 2, 5); OP_11(6, 4, 0); OP_7(7, 3, 5); OP_4(1, 0, 0)",
+      "instruction_count": 7,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_ad2ae9c5d1035baf",
+      "canonical_bytecode_hex": "670b0500000402000003030200010100020303020404010200010302020302000403030305030202030102000104030100040202000101020302010002",
+      "disassembly": "OP_11(5, 0, 0); OP_4(2, 0, 0); OP_3(3, 2, 0); OP_1(1, 0, 2); OP_3(3, 2, 4); OP_4(1, 2, 0); OP_1(3, 2, 2); OP_3(2, 0, 4); OP_3(3, 3, 5); OP_3(2, 2, 3); OP_1(2, 0, 1); OP_4(3, 1, 0); OP_4(2, 2, 0); OP_1(1, 2, 3); OP_2(1, 0, 2)",
+      "instruction_count": 15,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_5abf86f644e0248e",
+      "canonical_bytecode_hex": "67030201040505030403020003030201040301020303010204030102000301020302010102010300020102000002020101010201010101010203010204030102040805010005060305040201000103010203010303030103000b0504000102010103010205010201010203020007050304030200050506040503010106",
+      "disassembly": "OP_3(2, 1, 4); OP_5(5, 3, 4); OP_3(2, 0, 3); OP_3(2, 1, 4); OP_3(1, 2, 3); OP_3(1, 2, 4); OP_3(1, 2, 0); OP_3(1, 2, 3); OP_2(1, 1, 2); OP_1(3, 0, 2); OP_1(2, 0, 0); OP_2(2, 1, 1); OP_1(2, 1, 1); OP_1(1, 1, 2); OP_3(1, 2, 4); OP_3(1, 2, 4); OP_8(5, 1, 0); OP_5(6, 3, 5); OP_4(2, 1, 0); OP_1(3, 1, 2); OP_3(1, 3, 3); OP_3(1, 3, 0); OP_11(5, 4, 0); OP_1(2, 1, 1); OP_3(1, 2, 5); OP_1(2, 1, 1); OP_2(3, 2, 0); OP_7(5, 3, 4); OP_3(2, 0, 5); OP_5(6, 4, 5); OP_3(1, 1, 6)",
+      "instruction_count": 31,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_32c00016d5060775",
+      "canonical_bytecode_hex": "670505030403020000040302000402030002030203030203040906020004010300",
+      "disassembly": "OP_5(5, 3, 4); OP_3(2, 0, 0); OP_4(3, 2, 0); OP_4(2, 3, 0); OP_2(3, 2, 3); OP_3(2, 3, 4); OP_9(6, 2, 0); OP_4(1, 3, 0)",
+      "instruction_count": 8,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_39294242fda3668e",
+      "canonical_bytecode_hex": "670b050300040200000203000001020000010303030b06050001010000",
+      "disassembly": "OP_11(5, 3, 0); OP_4(2, 0, 0); OP_2(3, 0, 0); OP_1(2, 0, 0); OP_1(3, 3, 3); OP_11(6, 5, 0); OP_1(1, 0, 0)",
+      "instruction_count": 7,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_3a36eba0fac9320f",
+      "canonical_bytecode_hex": "67020200000403020008050b000402030002010203",
+      "disassembly": "OP_2(2, 0, 0); OP_4(3, 2, 0); OP_8(5, 11, 0); OP_4(2, 3, 0); OP_2(1, 2, 3)",
+      "instruction_count": 5,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_670081bacbef9888",
+      "canonical_bytecode_hex": "6701020001020301010302030401010203",
+      "disassembly": "OP_1(2, 0, 1); OP_2(3, 1, 1); OP_3(2, 3, 4); OP_1(1, 2, 3)",
+      "instruction_count": 4,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_32ce623a24c7081c",
+      "canonical_bytecode_hex": "6707050003030200030103000004010300",
+      "disassembly": "OP_7(5, 0, 3); OP_3(2, 0, 3); OP_1(3, 0, 0); OP_4(1, 3, 0)",
+      "instruction_count": 4,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_ba35da2cf57e2dfc",
+      "canonical_bytecode_hex": "67040200000203000201020203080507000303000401010203",
+      "disassembly": "OP_4(2, 0, 0); OP_2(3, 0, 2); OP_1(2, 2, 3); OP_8(5, 7, 0); OP_3(3, 0, 4); OP_1(1, 2, 3)",
+      "instruction_count": 6,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_07c23dbcab62b719",
+      "canonical_bytecode_hex": "6704020000030300000302020003030304040202000303020401010202",
+      "disassembly": "OP_4(2, 0, 0); OP_3(3, 0, 0); OP_3(2, 2, 0); OP_3(3, 3, 4); OP_4(2, 2, 0); OP_3(3, 2, 4); OP_1(1, 2, 2)",
+      "instruction_count": 7,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_405318aa23e0ed7a",
+      "canonical_bytecode_hex": "67010201010a0404000a040000010300000a000300050503040102000301010000",
+      "disassembly": "OP_1(2, 1, 1); OP_10(4, 4, 0); OP_10(4, 0, 0); OP_1(3, 0, 0); OP_10(0, 3, 0); OP_5(5, 3, 4); OP_1(2, 0, 3); OP_1(1, 0, 0)",
+      "instruction_count": 8,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_1541f2ecaf068155",
+      "canonical_bytecode_hex": "67080503000302000406060000050704050203020004010200",
+      "disassembly": "OP_8(5, 3, 0); OP_3(2, 0, 4); OP_6(6, 0, 0); OP_5(7, 4, 5); OP_2(3, 2, 0); OP_4(1, 2, 0)",
+      "instruction_count": 6,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_628172a2348164b0",
+      "canonical_bytecode_hex": "6702020101020302020102000006050403040303000102030301010002",
+      "disassembly": "OP_2(2, 1, 1); OP_2(3, 2, 2); OP_1(2, 0, 0); OP_6(5, 4, 3); OP_4(3, 3, 0); OP_1(2, 3, 3); OP_1(1, 0, 2)",
+      "instruction_count": 7,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_a5aa97ac3f51b81b",
+      "canonical_bytecode_hex": "670707000308023300",
+      "disassembly": "OP_7(7, 0, 3); OP_8(2, 51, 0)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_abe0a28eafdde475",
+      "canonical_bytecode_hex": "6708024b000b0005040402010008030300",
+      "disassembly": "OP_8(2, 75, 0); OP_11(0, 5, 4); OP_4(2, 1, 0); OP_8(3, 3, 0)",
+      "instruction_count": 4,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_baa6092843b48a2e",
+      "canonical_bytecode_hex": "670400020002030000",
+      "disassembly": "OP_4(0, 2, 0); OP_2(3, 0, 0)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_ff09d209d3172097",
+      "canonical_bytecode_hex": "6708057e0006060103",
+      "disassembly": "OP_8(5, 126, 0); OP_6(6, 1, 3)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_01c4d9483ce2c47d",
+      "canonical_bytecode_hex": "670704030601010002",
+      "disassembly": "OP_7(4, 3, 6); OP_1(1, 0, 2)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_f7b12353737f47c4",
+      "canonical_bytecode_hex": "67020201010802500003020006",
+      "disassembly": "OP_2(2, 1, 1); OP_8(2, 80, 0); OP_3(2, 0, 6)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_4644096af98fce6f",
+      "canonical_bytecode_hex": "67020001010400010005070505",
+      "disassembly": "OP_2(0, 1, 1); OP_4(0, 1, 0); OP_5(7, 5, 5)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_383ad5fb9ba4bade",
+      "canonical_bytecode_hex": "6708040e000707050605020104",
+      "disassembly": "OP_8(4, 14, 0); OP_7(7, 5, 6); OP_5(2, 1, 4)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_d15a600dd4e1e30e",
+      "canonical_bytecode_hex": "670b03070102000202",
+      "disassembly": "OP_11(3, 7, 1); OP_2(0, 2, 2)",
+      "instruction_count": 2,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_9b32252edda8edbb",
+      "canonical_bytecode_hex": "67040302000303030405000104",
+      "disassembly": "OP_4(3, 2, 0); OP_3(3, 3, 4); OP_5(0, 1, 4)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_2b1cc6824b68a117",
+      "canonical_bytecode_hex": "670301000006070707",
+      "disassembly": "OP_3(1, 0, 0); OP_6(7, 7, 7)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_42e889d15137c0fe",
+      "canonical_bytecode_hex": "670400010007040103",
+      "disassembly": "OP_4(0, 1, 0); OP_7(4, 1, 3)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_a3715663f2495f6d",
+      "canonical_bytecode_hex": "67050604050b000402070002030b000706",
+      "disassembly": "OP_5(6, 4, 5); OP_11(0, 4, 2); OP_7(0, 2, 3); OP_11(0, 7, 6)",
+      "instruction_count": 4,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_6e8ca715a3dcdc93",
+      "canonical_bytecode_hex": "670a0103000a02040008075500",
+      "disassembly": "OP_10(1, 3, 0); OP_10(2, 4, 0); OP_8(7, 85, 0)",
+      "instruction_count": 3,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_8941e46ec323696f",
+      "canonical_bytecode_hex": "670103010205010507",
+      "disassembly": "OP_1(3, 1, 2); OP_5(1, 5, 7)",
+      "instruction_count": 2,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_c27a55591d3c1465",
+      "canonical_bytecode_hex": "67010201010b020606",
+      "disassembly": "OP_1(2, 1, 1); OP_11(2, 6, 6)",
+      "instruction_count": 2,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_07a9e0663933a1a1",
+      "canonical_bytecode_hex": "6705010002050702060605050108054d00",
+      "disassembly": "OP_5(1, 0, 2); OP_5(7, 2, 6); OP_6(5, 5, 1); OP_8(5, 77, 0)",
+      "instruction_count": 4,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_12b5c3b3d93ad18a",
+      "canonical_bytecode_hex": "67080434000a0000000605000301000203",
+      "disassembly": "OP_8(4, 52, 0); OP_10(0, 0, 0); OP_6(5, 0, 3); OP_1(0, 2, 3)",
+      "instruction_count": 4,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_79b58b23affed061",
+      "canonical_bytecode_hex": "670a03050001020103",
+      "disassembly": "OP_10(3, 5, 0); OP_1(2, 1, 3)",
+      "instruction_count": 2,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_257a924d1aaa9953",
+      "canonical_bytecode_hex": "670103010208012e000b02070607050107",
+      "disassembly": "OP_1(3, 1, 2); OP_8(1, 46, 0); OP_11(2, 7, 6); OP_7(5, 1, 7)",
+      "instruction_count": 4,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_READ_ONLY",
+      "admissible_execution_contract": "Contract M_invariant: valid for arbitrary static memory M (T strictly preserves M)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_4f2dc7ed4d492741",
+      "canonical_bytecode_hex": "67070300070602010705060004",
+      "disassembly": "OP_7(3, 0, 7); OP_6(2, 1, 7); OP_5(6, 0, 4)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_066c7108916564d6",
+      "canonical_bytecode_hex": "67050305060502030703030106",
+      "disassembly": "OP_5(3, 5, 6); OP_5(2, 3, 7); OP_3(3, 1, 6)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_a1b6ddb08a9dd657",
+      "canonical_bytecode_hex": "6702010102010100030a020000",
+      "disassembly": "OP_2(1, 1, 2); OP_1(1, 0, 3); OP_10(2, 0, 0)",
+      "instruction_count": 3,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    },
+    {
+      "topology_id": "top_7c143b6024cb17e3",
+      "canonical_bytecode_hex": "67070005060101000208077f00",
+      "disassembly": "OP_7(0, 5, 6); OP_1(1, 0, 2); OP_8(7, 127, 0)",
+      "instruction_count": 3,
+      "proof_status": "SYMBOLICALLY_PROVEN_UNIVERSAL_IDEMPOTENT",
+      "operational_class": "PURE_REGISTER",
+      "admissible_execution_contract": "Universal complete-state unconstrained: valid across all (G, S, M) under modular scalar state in Z/4093Z (modular reduction on writes required if VM permits unreduced raw integers)",
+      "domain_order": 4093,
+      "symbolic_proof_verified": true,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null
+    },
+    {
+      "topology_id": "top_a78986f3926f4f49",
+      "canonical_bytecode_hex": "6708063e000a0004000a020200",
+      "disassembly": "OP_8(6, 62, 0); OP_10(0, 4, 0); OP_10(2, 2, 0)",
+      "instruction_count": 3,
+      "proof_status": "EMPIRICALLY_VALIDATED_RETRACTION",
+      "operational_class": "MEMORY_WRITE_ONLY",
+      "admissible_execution_contract": "Contract M_idempotent_write: valid for arbitrary initial memory M (T writes invariant register values)",
+      "domain_order": 4093,
+      "tests_passed": {
+        "random_1000_unconstrained": true,
+        "adversarial_aliasing_64": true
+      },
+      "counterexample_witness": null,
+      "epistemic_qualification": "Empirically validated under 1,000 unconstrained random states and 64 adversarial aliasing configurations. Not classified as a universal mathematical theorem due to memory state dependency."
+    }
+  ]
+}

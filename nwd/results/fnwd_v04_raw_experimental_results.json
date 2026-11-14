@@ -1,0 +1,623 @@
+{
+  "campaign_id": "FNWD_V04_GENERAL_ENABLER_OPTIMIZER_DISCOVERY",
+  "execution_timestamp": "2026-10-21T01:15:26Z",
+  "elapsed_seconds": 2.7211596965789795,
+  "all_gates_passed": true,
+  "gate_matrix": {
+    "Gate_1_Formal_Semantics": "PASSED",
+    "Gate_2_Independent_Oracle": "PASSED",
+    "Gate_3_Causal_Ablation": "PASSED",
+    "Gate_4_Generalization": "PASSED",
+    "Gate_5_Statistical_Validation": "PASSED",
+    "Blind_Discovery_Experiment": "PASSED",
+    "Gate_6_Provenance_Audit": "PASSED"
+  },
+  "gate1_formal_semantics": {
+    "inv_valid": {
+      "idempotent": true,
+      "observable_preserved": true,
+      "manifold_stable": true,
+      "all_invariants_hold": true
+    },
+    "inv_corrupt_rejected": true,
+    "inv_non_idem_rejected": true,
+    "res_valid": {
+      "workload_id": "tx_count_25",
+      "num_transactions": 25,
+      "intermediate_outputs_match": true,
+      "final_observable_state_matches": true,
+      "unauthorized_side_effects": false,
+      "traces_equivalent": true,
+      "mismatch_details": null,
+      "proof_obligation_notes": "Observational trace equivalence holds across all intermediate outputs and terminal states."
+    },
+    "res_corrupt_norm_rejected": true,
+    "res_unsafe_reorder_rejected": true,
+    "status": "PASSED"
+  },
+  "gate2_linearizability_oracle": {
+    "suite_name": "INDEPENDENT_CONCURRENCY_HISTORY_AUDIT",
+    "total_histories_checked": 15,
+    "valid_histories_passed": 15,
+    "injected_fault_histories_checked": 30,
+    "injected_faults_detected": 30,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "detection_recall_pct": 100.0,
+    "witness_counterexamples": [
+      {
+        "fault_type": "RAW_STALE_READ_INJECTION",
+        "rejection_reason": "No valid linearization order matches sequential specification and real-time precedence",
+        "witness": {
+          "total_transactions": 6,
+          "precedence_edges_count": 15,
+          "sample_failing_events": [
+            {
+              "tx_id": 0,
+              "op": "RMW",
+              "observed_return": 139
+            },
+            {
+              "tx_id": 1,
+              "op": "RMW",
+              "observed_return": 50
+            },
+            {
+              "tx_id": 2,
+              "op": "RMW",
+              "observed_return": 28
+            },
+            {
+              "tx_id": 3,
+              "op": "RMW",
+              "observed_return": 15
+            },
+            {
+              "tx_id": 4,
+              "op": "RMW",
+              "observed_return": 13
+            }
+          ]
+        }
+      },
+      {
+        "fault_type": "PRECEDENCE_CAUSAL_INVERSION",
+        "rejection_reason": "No valid linearization order matches sequential specification and real-time precedence",
+        "witness": {
+          "total_transactions": 6,
+          "precedence_edges_count": 20,
+          "sample_failing_events": [
+            {
+              "tx_id": 0,
+              "op": "RMW",
+              "observed_return": 2
+            },
+            {
+              "tx_id": 1,
+              "op": "RMW",
+              "observed_return": 50
+            },
+            {
+              "tx_id": 2,
+              "op": "RMW",
+              "observed_return": 28
+            },
+            {
+              "tx_id": 3,
+              "op": "RMW",
+              "observed_return": 15
+            },
+            {
+              "tx_id": 4,
+              "op": "RMW",
+              "observed_return": 13
+            }
+          ]
+        }
+      },
+      {
+        "fault_type": "RAW_STALE_READ_INJECTION",
+        "rejection_reason": "No valid linearization order matches sequential specification and real-time precedence",
+        "witness": {
+          "total_transactions": 6,
+          "precedence_edges_count": 15,
+          "sample_failing_events": [
+            {
+              "tx_id": 0,
+              "op": "RMW",
+              "observed_return": 182
+            },
+            {
+              "tx_id": 1,
+              "op": "RMW",
+              "observed_return": 59
+            },
+            {
+              "tx_id": 2,
+              "op": "RMW",
+              "observed_return": 7
+            },
+            {
+              "tx_id": 3,
+              "op": "RMW",
+              "observed_return": 10
+            },
+            {
+              "tx_id": 4,
+              "op": "RMW",
+              "observed_return": 6
+            }
+          ]
+        }
+      },
+      {
+        "fault_type": "PRECEDENCE_CAUSAL_INVERSION",
+        "rejection_reason": "No valid linearization order matches sequential specification and real-time precedence",
+        "witness": {
+          "total_transactions": 6,
+          "precedence_edges_count": 20,
+          "sample_failing_events": [
+            {
+              "tx_id": 0,
+              "op": "RMW",
+              "observed_return": 45
+            },
+            {
+              "tx_id": 1,
+              "op": "RMW",
+              "observed_return": 59
+            },
+            {
+              "tx_id": 2,
+              "op": "RMW",
+              "observed_return": 7
+            },
+            {
+              "tx_id": 3,
+              "op": "RMW",
+              "observed_return": 10
+            },
+            {
+              "tx_id": 4,
+              "op": "RMW",
+              "observed_return": 6
+            }
+          ]
+        }
+      },
+      {
+        "fault_type": "RAW_STALE_READ_INJECTION",
+        "rejection_reason": "No valid linearization order matches sequential specification and real-time precedence",
+        "witness": {
+          "total_transactions": 6,
+          "precedence_edges_count": 15,
+          "sample_failing_events": [
+            {
+              "tx_id": 0,
+              "op": "RMW",
+              "observed_return": 142
+            },
+            {
+              "tx_id": 1,
+              "op": "RMW",
+              "observed_return": 11
+            },
+            {
+              "tx_id": 2,
+              "op": "RMW",
+              "observed_return": 41
+            },
+            {
+              "tx_id": 3,
+              "op": "RMW",
+              "observed_return": 23
+            },
+            {
+              "tx_id": 4,
+              "op": "RMW",
+              "observed_return": 42
+            }
+          ]
+        }
+      }
+    ],
+    "gate_status": "PASSED"
+  },
+  "gate3_causal_ablation": {
+    "unbatched_2pl": {
+      "cell_name": "UNBATCHED_2PL",
+      "mean_locks": 141.0,
+      "mean_wall_clock_us": 25832.92000927031,
+      "throughput_tx_per_sec": 1548.411870808478,
+      "correctness_rate": 1.0,
+      "state_drift_detected": true
+    },
+    "batched_identity": {
+      "cell_name": "BATCHED_IDENTITY",
+      "mean_locks": 8.0,
+      "mean_wall_clock_us": 905.9800300747156,
+      "throughput_tx_per_sec": 44151.0835472844,
+      "correctness_rate": 1.0,
+      "state_drift_detected": true
+    },
+    "batched_corrupt": {
+      "cell_name": "BATCHED_CORRUPT",
+      "mean_locks": 8.0,
+      "mean_wall_clock_us": 727.0800066180527,
+      "throughput_tx_per_sec": 55014.5783626432,
+      "correctness_rate": 0.0,
+      "state_drift_detected": false
+    },
+    "batched_mathematical": {
+      "cell_name": "BATCHED_MATHEMATICAL",
+      "mean_locks": 8.0,
+      "mean_wall_clock_us": 550.7199908606708,
+      "throughput_tx_per_sec": 72632.19179221657,
+      "correctness_rate": 1.0,
+      "state_drift_detected": false
+    },
+    "commutation_only": {
+      "cell_name": "COMMUTATION_ONLY_NO_BATCH",
+      "mean_locks": 133.95,
+      "mean_wall_clock_us": 22671.92799737677,
+      "throughput_tx_per_sec": 1753.0048615450146,
+      "correctness_rate": 1.0,
+      "state_drift_detected": true
+    },
+    "normalizer_only": {
+      "cell_name": "NORMALIZER_ONLY_NO_SPECULATION",
+      "mean_locks": 141.0,
+      "mean_wall_clock_us": 24450.052772881463,
+      "throughput_tx_per_sec": 1635.3338936081095,
+      "correctness_rate": 1.0,
+      "state_drift_detected": false
+    },
+    "synergy_vs_batched_identity_pct": 100.0,
+    "synergy_vs_unbatched_2pl_pct": 94.32624113475178,
+    "net_causal_synergy_pct": 94.32624113475178,
+    "batching_alone_sound": false,
+    "gate_status": "PASSED"
+  },
+  "gate4_domain_generalization": {
+    "DOMAIN_AFFINE_REGISTERS": {
+      "domain_id": "DOMAIN_AFFINE_REGISTERS",
+      "domain_name": "Modular Affine Register Automata",
+      "operator_family_description": "Affine arithmetic transformations over Z_4093 with auxiliary drift",
+      "optimizer_candidate_id": "THM_LAW_023",
+      "enabler_candidate_id": "top_b5361413425b9d3f",
+      "baseline_locks": 176.0,
+      "optimized_locks": 10.0,
+      "lock_reduction_pct": 94.31818181818183,
+      "baseline_time_us": 30513.480002991855,
+      "optimized_time_us": 543.6800071038306,
+      "speedup_ratio": 56.12396925451863,
+      "observational_equivalence_verified": true,
+      "linearizability_verified": true,
+      "negative_control_rejected": true,
+      "falsification_boundary_identified": "Extreme write hotspot on payload register R1",
+      "gate_status": "PASSED"
+    },
+    "DOMAIN_CRDT_ORSET": {
+      "domain_id": "DOMAIN_CRDT_ORSET",
+      "domain_name": "CRDT Observed-Remove Set Lattice",
+      "operator_family_description": "Bounded conflict-free set with causal tombstone accumulation",
+      "optimizer_candidate_id": "O_CRDT_SPECULATIVE_PARTITION",
+      "enabler_candidate_id": "E_CRDT_TOMBSTONE_COMPACTION",
+      "baseline_locks": 200.0,
+      "optimized_locks": 20.0,
+      "lock_reduction_pct": 90.0,
+      "baseline_time_us": 455.1000311039388,
+      "optimized_time_us": 269.3000133149326,
+      "speedup_ratio": 1.6899369053195055,
+      "observational_equivalence_verified": true,
+      "linearizability_verified": true,
+      "negative_control_rejected": true,
+      "falsification_boundary_identified": "Unordered distributed message drops violating causal tombstone horizon",
+      "gate_status": "PASSED"
+    },
+    "DOMAIN_KV_TRIE": {
+      "domain_id": "DOMAIN_KV_TRIE",
+      "domain_name": "Transactional Key-Value Ordered Tree Store",
+      "operator_family_description": "Persistent binary search tree with depth skew under speculative writes",
+      "optimizer_candidate_id": "O_TRIE_SPECULATIVE_PARTITION",
+      "enabler_candidate_id": "E_TRIE_BALANCING_RETRACTION",
+      "baseline_locks": 150.0,
+      "optimized_locks": 10.0,
+      "lock_reduction_pct": 93.33333333333333,
+      "baseline_time_us": 264.00003116577864,
+      "optimized_time_us": 461.99996722862124,
+      "speedup_ratio": 0.5714286794205289,
+      "observational_equivalence_verified": true,
+      "linearizability_verified": true,
+      "negative_control_rejected": true,
+      "falsification_boundary_identified": "Extreme single-key write hotspot (zero disjoint key commutativity)",
+      "gate_status": "PASSED"
+    }
+  },
+  "gate5_paired_statistics": [
+    {
+      "domain_id": "DOMAIN_AFFINE_REGISTERS",
+      "metric_name": "lock_acquisitions",
+      "n_pairs": 30,
+      "baseline_mean": 143.9,
+      "candidate_mean": 8.0,
+      "mean_difference": -135.9,
+      "std_difference": 3.4175005990968876,
+      "cohens_d_z": -39.76590378240551,
+      "paired_t_statistic": -217.80682521203502,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": -137.56666666666666,
+      "ci_99_bootstrap_upper": -134.33333333333334,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    },
+    {
+      "domain_id": "DOMAIN_AFFINE_REGISTERS",
+      "metric_name": "wall_clock_latency_us",
+      "n_pairs": 30,
+      "baseline_mean": 24499.649994929012,
+      "candidate_mean": 858.0666636892905,
+      "mean_difference": -23641.58333123972,
+      "std_difference": 1132.241394274557,
+      "cohens_d_z": -20.880338283681294,
+      "paired_t_statistic": -114.36632286310949,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": -24244.74667447309,
+      "ci_99_bootstrap_upper": -23182.100001334522,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    },
+    {
+      "domain_id": "DOMAIN_CRDT_ORSET",
+      "metric_name": "lock_acquisitions",
+      "n_pairs": 30,
+      "baseline_mean": 150.0,
+      "candidate_mean": 15.0,
+      "mean_difference": -135.0,
+      "std_difference": 0.0,
+      "cohens_d_z": 0.0,
+      "paired_t_statistic": -739425452631.9742,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": -135.0,
+      "ci_99_bootstrap_upper": -135.0,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    },
+    {
+      "domain_id": "DOMAIN_CRDT_ORSET",
+      "metric_name": "wall_clock_latency_us",
+      "n_pairs": 30,
+      "baseline_mean": 244.9000021442771,
+      "candidate_mean": 161.81332951722047,
+      "mean_difference": -83.08667262705664,
+      "std_difference": 15.411794183673656,
+      "cohens_d_z": -5.391109668144527,
+      "paired_t_statistic": -29.52832375226948,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": -90.380001347512,
+      "ci_99_bootstrap_upper": -75.99666132591665,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    },
+    {
+      "domain_id": "DOMAIN_KV_TRIE",
+      "metric_name": "lock_acquisitions",
+      "n_pairs": 30,
+      "baseline_mean": 120.0,
+      "candidate_mean": 8.0,
+      "mean_difference": -112.0,
+      "std_difference": 0.0,
+      "cohens_d_z": 0.0,
+      "paired_t_statistic": -613449264405.786,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": -112.0,
+      "ci_99_bootstrap_upper": -112.0,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    },
+    {
+      "domain_id": "DOMAIN_KV_TRIE",
+      "metric_name": "wall_clock_latency_us",
+      "n_pairs": 30,
+      "baseline_mean": 141.33332879282534,
+      "candidate_mean": 229.33666671936712,
+      "mean_difference": 88.00333792654176,
+      "std_difference": 17.01325771206423,
+      "cohens_d_z": 5.172632979287554,
+      "paired_t_statistic": 28.331677644509462,
+      "paired_t_p_value": 1e-12,
+      "wilcoxon_statistic": 0.0,
+      "wilcoxon_p_value": 1.7343976281836149e-06,
+      "paired_permutation_p_value": 9.999000099990002e-05,
+      "ci_99_bootstrap_lower": 80.51667246036232,
+      "ci_99_bootstrap_upper": 96.00667787405352,
+      "holm_bonferroni_adjusted_p": 0.0005999400059994001,
+      "is_statistically_significant_alpha_01": true
+    }
+  ],
+  "blind_discovery_experiment": [
+    {
+      "candidate_id": "OP_CAND_01",
+      "candidate_type": "CONDITIONAL_OPTIMIZER",
+      "algebraic_signature": "CONDITIONAL_AFFINE_COMMUTATOR over AFFINE_REGISTERS",
+      "target_manifold": "Invariant Manifold: 2 == 0",
+      "detected_unmet_precondition": "Requires 2 == 0 to commute safely",
+      "matched_enabler_id": "OP_CAND_07",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Extreme write hotspot on payload register R1"
+    },
+    {
+      "candidate_id": "OP_CAND_02",
+      "candidate_type": "CONDITIONAL_OPTIMIZER",
+      "algebraic_signature": "CONDITIONAL_CRDT_PARTITIONER over CRDT_ORSET",
+      "target_manifold": "Invariant Manifold: tombstone_count == 0",
+      "detected_unmet_precondition": "Requires tombstone_count == 0 to commute safely",
+      "matched_enabler_id": "OP_CAND_08",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Unordered causal horizon inversion"
+    },
+    {
+      "candidate_id": "OP_CAND_03",
+      "candidate_type": "CONDITIONAL_OPTIMIZER",
+      "algebraic_signature": "CONDITIONAL_TREE_RANGE_PARTITIONER over KV_TRIE",
+      "target_manifold": "Invariant Manifold: depth_skew == 0",
+      "detected_unmet_precondition": "Requires depth_skew == 0 to commute safely",
+      "matched_enabler_id": "OP_CAND_09",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Single-key exclusive update saturation"
+    },
+    {
+      "candidate_id": "OP_CAND_04",
+      "candidate_type": "DEFECTIVE_OPTIMIZER",
+      "algebraic_signature": "UNSOUND_INVERTED_WRITE_HAZARD over AFFINE_REGISTERS",
+      "target_manifold": null,
+      "detected_unmet_precondition": "Unconditional semantic violation: UNCONDITIONAL_CORRUPTION",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "All states violate semantic preservation"
+    },
+    {
+      "candidate_id": "OP_CAND_05",
+      "candidate_type": "DEFECTIVE_OPTIMIZER",
+      "algebraic_signature": "UNSOUND_PAYLOAD_DROPPER over AFFINE_REGISTERS",
+      "target_manifold": null,
+      "detected_unmet_precondition": "Unconditional semantic violation: DATA_LOSS",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "All states violate semantic preservation"
+    },
+    {
+      "candidate_id": "OP_CAND_06",
+      "candidate_type": "DEFECTIVE_OPTIMIZER",
+      "algebraic_signature": "UNSOUND_CIRCULAR_RAW_HAZARD over AFFINE_REGISTERS",
+      "target_manifold": null,
+      "detected_unmet_precondition": "Unconditional semantic violation: STALE_READ",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "All states violate semantic preservation"
+    },
+    {
+      "candidate_id": "OP_CAND_07",
+      "candidate_type": "ENABLER_NORMALIZER",
+      "algebraic_signature": "AFFINE_AUXILIARY_RESET_RETRACTION over AFFINE_REGISTERS",
+      "target_manifold": "Projects to 2 == 0",
+      "detected_unmet_precondition": null,
+      "matched_enabler_id": "OP_CAND_01",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Redundant when operating on already normalized manifolds"
+    },
+    {
+      "candidate_id": "OP_CAND_08",
+      "candidate_type": "ENABLER_NORMALIZER",
+      "algebraic_signature": "CRDT_TOMBSTONE_COMPACTION_RETRACTION over CRDT_ORSET",
+      "target_manifold": "Projects to tombstone_count == 0",
+      "detected_unmet_precondition": null,
+      "matched_enabler_id": "OP_CAND_02",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Redundant when operating on already normalized manifolds"
+    },
+    {
+      "candidate_id": "OP_CAND_09",
+      "candidate_type": "ENABLER_NORMALIZER",
+      "algebraic_signature": "TREE_DSW_BALANCING_RETRACTION over KV_TRIE",
+      "target_manifold": "Projects to depth_skew == 0",
+      "detected_unmet_precondition": null,
+      "matched_enabler_id": "OP_CAND_03",
+      "formal_equivalence_proven": true,
+      "empirical_benefit_measured": true,
+      "promoted_to_application": true,
+      "falsification_boundary": "Redundant when operating on already normalized manifolds"
+    },
+    {
+      "candidate_id": "OP_CAND_10",
+      "candidate_type": "DEFECTIVE_ENABLER",
+      "algebraic_signature": "CORRUPT_ENABLER_OBSERVABLE_LEAKER over AFFINE_REGISTERS",
+      "target_manifold": null,
+      "detected_unmet_precondition": "Violates observable subspace invariance O(R(s)) != O(s)",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "Leaked side effects on observable payload registers"
+    },
+    {
+      "candidate_id": "OP_CAND_11",
+      "candidate_type": "UNRELATED_TRANSFORM",
+      "algebraic_signature": "IDENTITY_NO_OP",
+      "target_manifold": null,
+      "detected_unmet_precondition": "No invariant manifold projection or defect reduction",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "Provides zero optimization enablement"
+    },
+    {
+      "candidate_id": "OP_CAND_12",
+      "candidate_type": "UNRELATED_TRANSFORM",
+      "algebraic_signature": "CYCLIC_REGISTER_PERMUTATION",
+      "target_manifold": null,
+      "detected_unmet_precondition": "No invariant manifold projection or defect reduction",
+      "matched_enabler_id": null,
+      "formal_equivalence_proven": false,
+      "empirical_benefit_measured": false,
+      "promoted_to_application": false,
+      "falsification_boundary": "Provides zero optimization enablement"
+    }
+  ],
+  "provenance_manifest": {
+    "manifest_timestamp_iso": "2026-10-21T01:15:26Z",
+    "git_revision": "V0.4-HEAD",
+    "python_version": "3.14.3",
+    "platform_info": "Windows 11",
+    "input_catalog_hashes": {
+      "idempotents": "529016c3954f6fdf46311c2a0e0463d413bb921ee544742c85cd5c01bb05e472",
+      "commutators": "01a0c025668b212894d5640de0f2adca093b0bd248836493b87dc6635a5c3d91",
+      "retractions": "68f936c08af3da5cfa0500f2ba9058cbf025f69edf715ce369de50d903fbbdc6"
+    },
+    "code_file_hashes": {
+      "nwd/atlas/schema_v04.py": "075929bac5ceb798a608e21986822852fe05bad8085317998cc4158bc2b8a8a2",
+      "nwd/atlas/formal_semantics.py": "0270c320a090720489e7e0df4d8338bacbf61ee7d9d719b6a14924495fe5c395",
+      "nwd/atlas/linearizability_oracle.py": "71993acba36552c922f6578c078585aca14ba0f80d4254550d8e5b6d65ae87ba",
+      "nwd/atlas/causal_ablation.py": "fdcb80ec5df3306b48de6875974b10c1e19d5257507d1f8799037bbdb90bd807",
+      "nwd/atlas/domain_crdt.py": "0fa6cb50be0b9d877a1728262cf1b109694a00778bcbb215d69055ffe7d31e52",
+      "nwd/atlas/domain_trie.py": "aac1622c46d15d61b8af59b83ce212dcf3a843979221d6b555924a1b3a5eb520",
+      "nwd/atlas/paired_statistics.py": "60b2c50871cc2083c8bf4eac045a2f2a60873e7ac1c6c92101f0eb39df2a3a9a",
+      "nwd/atlas/blind_discovery.py": "dd79b3839d43b11fdb97fc23fb72b6984da9e54f6a488f21725a1f9ea9f46bdc",
+      "nwd/atlas/run_atlas_v04.py": "6c4846cac8c4fd3cabe4f8b7b76d4bc41e2b7d615da08d01f4ac7fddae58d261"
+    },
+    "output_artifact_hashes": {},
+    "all_seeds_reproducible": true
+  }
+}

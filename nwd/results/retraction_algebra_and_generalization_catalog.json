@@ -1,0 +1,6124 @@
+{
+  "metadata": {
+    "title": "FNWD Retraction Algebra & Structural Generalization Master Catalog",
+    "timestamp": "2026-10-11 00:29:14",
+    "version": "v1.0-retraction-algebra",
+    "executive_summary": {
+      "shared_geometry_cohort_audit": "Pairs 1-3 are syntactic variants of identical maps (A == B). Pair 4 diverges on unconstrained memory due to OP_MEM_LOOKUP into S5, and reduces to identical maps on clean memory. No distinct full-state transformations form noncommuting right-zero bands.",
+      "absorption_preorder_and_quotient_poset": "127 idempotents partition into 115 image classes under mutual absorption equivalence (A ~ B <=> Im(A) = Im(B)). Identified 18 strict nested pairs (8 pure-register).",
+      "deductive_structural_generalization": "Symbolic algebraic variety inclusion Im(B) <= Im(A) deduced composition laws with 100.0% accuracy across 100 tested pairs, with 0 false positives and 0 false negatives.",
+      "candidate_accounting_resolution": "100% of candidate pools were sampled in benchmark trials (41/41 Ident, 193/193 Diverse). Verified discovery participation is 29/41 in Ident (70.7%) and 60/193 in Diverse (31.1%).",
+      "epistemic_partition": "Strictly preserves 52 SYMBOLICALLY_PROVEN_UNIVERSAL vs 47 EMPIRICALLY_REPLAY_VALIDATED relations."
+    }
+  },
+  "module1_retraction_band_audit": {
+    "metadata": {
+      "title": "FNWD Full-State Retraction & Right-Zero Band Audit",
+      "timestamp": "2026-10-11 00:26:16",
+      "pairs_audited": 4
+    },
+    "retraction_pair_audits": [
+      {
+        "pair_label": "Pair 1 (Linear Shared Geometry)",
+        "id_a": "DIV_5c5299955409",
+        "id_b": "DIV_9bc9e2ca0058",
+        "instructions_a": [
+          [
+            4,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            1,
+            2,
+            0
+          ]
+        ],
+        "instructions_b": [
+          [
+            4,
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            1,
+            2,
+            0
+          ]
+        ],
+        "a_is_idempotent": true,
+        "b_is_idempotent": true,
+        "maps_are_identical": true,
+        "differentiating_witness": null,
+        "fixed_point_equations_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_equations_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "images_are_identical_unconstrained": true,
+        "images_are_identical_clean_memory": true,
+        "a_circ_b_equals_b_unconstrained": true,
+        "b_circ_a_equals_a_unconstrained": true,
+        "a_circ_b_equals_b_clean_memory": true,
+        "b_circ_a_equals_a_clean_memory": true,
+        "commutes_unconstrained": true,
+        "commutes_clean_memory": true,
+        "noncommutation_witness": null,
+        "aba_equals_a": true,
+        "bab_equals_b": true,
+        "algebraic_structure": "SYNTACTIC_VARIANT_IDENTICAL_MAP",
+        "scientific_summary": "Transformations A and B possess distinct bytecode sequences but implement the exact same full-state mathematical transformation (A == B). Consequently, A o B = B o A = A = B holds identically."
+      },
+      {
+        "pair_label": "Pair 2 (Affine Shared Geometry)",
+        "id_a": "DIV_d0def6690d2d",
+        "id_b": "DIV_3db0524dcf4f",
+        "instructions_a": [
+          [
+            2,
+            2,
+            1,
+            1
+          ],
+          [
+            11,
+            5,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            9,
+            5,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "instructions_b": [
+          [
+            2,
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            1,
+            0
+          ],
+          [
+            9,
+            5,
+            2,
+            0
+          ],
+          [
+            6,
+            5,
+            0,
+            4
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            9,
+            5,
+            2,
+            0
+          ]
+        ],
+        "a_is_idempotent": true,
+        "b_is_idempotent": true,
+        "maps_are_identical": true,
+        "differentiating_witness": null,
+        "fixed_point_equations_a": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(62*R1 + 17, 4093), 4093) == 0"
+        ],
+        "fixed_point_equations_b": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(62*R1 + 17, 4093), 4093) == 0"
+        ],
+        "images_are_identical_unconstrained": true,
+        "images_are_identical_clean_memory": true,
+        "a_circ_b_equals_b_unconstrained": true,
+        "b_circ_a_equals_a_unconstrained": true,
+        "a_circ_b_equals_b_clean_memory": true,
+        "b_circ_a_equals_a_clean_memory": true,
+        "commutes_unconstrained": true,
+        "commutes_clean_memory": true,
+        "noncommutation_witness": null,
+        "aba_equals_a": true,
+        "bab_equals_b": true,
+        "algebraic_structure": "SYNTACTIC_VARIANT_IDENTICAL_MAP",
+        "scientific_summary": "Transformations A and B possess distinct bytecode sequences but implement the exact same full-state mathematical transformation (A == B). Consequently, A o B = B o A = A = B holds identically."
+      },
+      {
+        "pair_label": "Pair 3 (Affine Zero Shared Geometry)",
+        "id_a": "DIV_ff5b6d711d43",
+        "id_b": "DIV_29f7f8e14737",
+        "instructions_a": [
+          [
+            3,
+            2,
+            0,
+            3
+          ],
+          [
+            6,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "instructions_b": [
+          [
+            3,
+            2,
+            0,
+            3
+          ],
+          [
+            6,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "a_is_idempotent": true,
+        "b_is_idempotent": true,
+        "maps_are_identical": true,
+        "differentiating_witness": null,
+        "fixed_point_equations_a": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "fixed_point_equations_b": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "images_are_identical_unconstrained": true,
+        "images_are_identical_clean_memory": true,
+        "a_circ_b_equals_b_unconstrained": true,
+        "b_circ_a_equals_a_unconstrained": true,
+        "a_circ_b_equals_b_clean_memory": true,
+        "b_circ_a_equals_a_clean_memory": true,
+        "commutes_unconstrained": true,
+        "commutes_clean_memory": true,
+        "noncommutation_witness": null,
+        "aba_equals_a": true,
+        "bab_equals_b": true,
+        "algebraic_structure": "SYNTACTIC_VARIANT_IDENTICAL_MAP",
+        "scientific_summary": "Transformations A and B possess distinct bytecode sequences but implement the exact same full-state mathematical transformation (A == B). Consequently, A o B = B o A = A = B holds identically."
+      },
+      {
+        "pair_label": "Pair 4 (Candidate Mutual Retraction Pair)",
+        "id_a": "DIV_ba3eb9b2fb7c",
+        "id_b": "DIV_4f6837e34613",
+        "instructions_a": [
+          [
+            3,
+            2,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            2,
+            2
+          ],
+          [
+            6,
+            5,
+            0,
+            0
+          ],
+          [
+            3,
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            3,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            3
+          ]
+        ],
+        "instructions_b": [
+          [
+            4,
+            2,
+            1,
+            0
+          ],
+          [
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            11,
+            5,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            1,
+            0
+          ],
+          [
+            4,
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            4,
+            3,
+            3,
+            0
+          ],
+          [
+            1,
+            1,
+            2,
+            3
+          ]
+        ],
+        "a_is_idempotent": true,
+        "b_is_idempotent": true,
+        "maps_are_identical": false,
+        "differentiating_witness": {
+          "input_state": {
+            "g": [
+              2661,
+              2669,
+              3786,
+              3421
+            ],
+            "s": [
+              3841,
+              2661,
+              2473,
+              1303,
+              3449,
+              1830,
+              612,
+              2531
+            ],
+            "mem": {
+              "0": 1945,
+              "1": 2548,
+              "2": 3192,
+              "3": 3009,
+              "4": 556,
+              "5": 4021,
+              "6": 330,
+              "7": 3623,
+              "8": 237,
+              "9": 3498,
+              "10": 3157,
+              "11": 725,
+              "12": 2763,
+              "13": 3371,
+              "14": 749,
+              "15": 415
+            }
+          },
+          "output_a": {
+            "g": [
+              2661,
+              2669,
+              0,
+              2669
+            ],
+            "s": [
+              3841,
+              2661,
+              2473,
+              1303,
+              3449,
+              0,
+              612,
+              2531
+            ],
+            "mem": {
+              "0": 1945,
+              "1": 2548,
+              "2": 3192,
+              "3": 3009,
+              "4": 556,
+              "5": 4021,
+              "6": 330,
+              "7": 3623,
+              "8": 237,
+              "9": 3498,
+              "10": 3157,
+              "11": 725,
+              "12": 2763,
+              "13": 3371,
+              "14": 749,
+              "15": 415
+            }
+          },
+          "output_b": {
+            "g": [
+              2661,
+              2669,
+              0,
+              2669
+            ],
+            "s": [
+              3841,
+              2661,
+              2473,
+              1303,
+              3449,
+              2548,
+              612,
+              2531
+            ],
+            "mem": {
+              "0": 1945,
+              "1": 2548,
+              "2": 3192,
+              "3": 3009,
+              "4": 556,
+              "5": 4021,
+              "6": 330,
+              "7": 3623,
+              "8": 237,
+              "9": 3498,
+              "10": 3157,
+              "11": 725,
+              "12": 2763,
+              "13": 3371,
+              "14": 749,
+              "15": 415
+            }
+          }
+        },
+        "fixed_point_equations_a": [
+          "R2: -R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "fixed_point_equations_b": [
+          "R2: -R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(M0(Mod(S0, 64)) - Mod(S5, 4093), 4093) == 0"
+        ],
+        "images_are_identical_unconstrained": false,
+        "images_are_identical_clean_memory": true,
+        "a_circ_b_equals_b_unconstrained": false,
+        "b_circ_a_equals_a_unconstrained": false,
+        "a_circ_b_equals_b_clean_memory": true,
+        "b_circ_a_equals_a_clean_memory": true,
+        "commutes_unconstrained": false,
+        "commutes_clean_memory": true,
+        "noncommutation_witness": {
+          "input_state": {
+            "g": [
+              2097,
+              51,
+              3893,
+              2313
+            ],
+            "s": [
+              2312,
+              667,
+              1484,
+              909,
+              22,
+              1615,
+              2441,
+              2273
+            ],
+            "mem": {
+              "0": 2763,
+              "1": 1944,
+              "2": 4016,
+              "3": 1809,
+              "4": 3234,
+              "5": 474,
+              "6": 1631,
+              "7": 1213,
+              "8": 67,
+              "9": 773,
+              "10": 2655,
+              "11": 498,
+              "12": 2775,
+              "13": 3164,
+              "14": 1077,
+              "15": 3193
+            }
+          },
+          "A_circ_B_out": {
+            "g": [
+              2097,
+              51,
+              0,
+              51
+            ],
+            "s": [
+              2312,
+              667,
+              1484,
+              909,
+              22,
+              0,
+              2441,
+              2273
+            ],
+            "mem": {
+              "0": 2763,
+              "1": 1944,
+              "2": 4016,
+              "3": 1809,
+              "4": 3234,
+              "5": 474,
+              "6": 1631,
+              "7": 1213,
+              "8": 67,
+              "9": 773,
+              "10": 2655,
+              "11": 498,
+              "12": 2775,
+              "13": 3164,
+              "14": 1077,
+              "15": 3193
+            }
+          },
+          "B_circ_A_out": {
+            "g": [
+              2097,
+              51,
+              0,
+              51
+            ],
+            "s": [
+              2312,
+              667,
+              1484,
+              909,
+              22,
+              67,
+              2441,
+              2273
+            ],
+            "mem": {
+              "0": 2763,
+              "1": 1944,
+              "2": 4016,
+              "3": 1809,
+              "4": 3234,
+              "5": 474,
+              "6": 1631,
+              "7": 1213,
+              "8": 67,
+              "9": 773,
+              "10": 2655,
+              "11": 498,
+              "12": 2775,
+              "13": 3164,
+              "14": 1077,
+              "15": 3193
+            }
+          }
+        },
+        "aba_equals_a": true,
+        "bab_equals_b": true,
+        "algebraic_structure": "MEMORY_CONDITIONAL_SHARED_IMAGE_RETRACTIONS",
+        "scientific_summary": "Transformations A and B have matching register fixed-point geometries and satisfy mutual absorption (A o B = B and B o A = A) conditionally on clean initial memory. However, under unconstrained memory, one generator performs an unbuffered memory lookup (MEM_LOOKUP into S5), causing full-state image divergence."
+      }
+    ]
+  },
+  "module2_nested_preorder_and_quotient_poset": {
+    "metadata": {
+      "title": "FNWD Nested Retraction Preorder & Quotient Poset Catalog",
+      "timestamp": "2026-10-11 00:27:21",
+      "total_idempotents": 127,
+      "quotient_equivalence_classes": 115,
+      "total_strict_nested_pairs_quotient": 18,
+      "pure_register_strict_nested_pairs_quotient": 8,
+      "candidate_level_nested_pairs_total": 23,
+      "candidate_level_nested_pairs_pure_register": 10,
+      "poset_maximal_classes_count": 6,
+      "poset_minimal_classes_count": 18,
+      "isolated_idempotent_classes_count": 91
+    },
+    "quotient_classes": [
+      {
+        "class_id": "CLASS_000",
+        "representative_id": "IDENT_LAW_023_B_5f047b7ac1fa",
+        "member_ids": [
+          "IDENT_LAW_023_B_5f047b7ac1fa"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R3: R1*(Mod(S6, 4093)) - R3 == 0",
+          "S0: Mod(-Mod(S0, 4093) + Mod(4092*S2 + S6, 4093), 4093) == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S1 + S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_001",
+        "representative_id": "IDENT_LAW_024_B_0e02f01cb05c",
+        "member_ids": [
+          "IDENT_LAW_024_B_0e02f01cb05c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "S0: Mod(-Mod(S0, 4093) + Mod(S4 + S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_002",
+        "representative_id": "IDENT_LAW_025_B_89e019de3c13",
+        "member_ids": [
+          "IDENT_LAW_025_B_89e019de3c13"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 + R2*(Mod(S0, 4093)) == 0",
+          "R3: -R2 - R3 == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0 + S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_003",
+        "representative_id": "IDENT_LAW_026_B_a8dde782f934",
+        "member_ids": [
+          "IDENT_LAW_026_B_a8dde782f934"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 - R2 == 0",
+          "S3: Mod(-Mod(S3, 4093) + Mod(4092*S6 + S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_004",
+        "representative_id": "IDENT_LAW_029_A_b1b59f1dfc5b",
+        "member_ids": [
+          "IDENT_LAW_029_A_b1b59f1dfc5b"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R3: R0 - R2 - R3 == 0",
+          "S5: Mod(2*(Mod(S3, 4093)) - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_005",
+        "representative_id": "IDENT_LAW_035_B_cefdc86c3c5d",
+        "member_ids": [
+          "IDENT_LAW_035_B_cefdc86c3c5d"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 - R2 == 0",
+          "R3: -R3 == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S2 + S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_006",
+        "representative_id": "IDENT_LAW_052_A_366d544d8b2c",
+        "member_ids": [
+          "IDENT_LAW_052_A_366d544d8b2c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 + R1 == 0",
+          "R3: -R3 == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S3*S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_007",
+        "representative_id": "IDENT_LAW_055_B_7e0dafd64333",
+        "member_ids": [
+          "IDENT_LAW_055_B_7e0dafd64333"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R0: -R0 + 2*R2 - R3 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_008",
+        "representative_id": "IDENT_LAW_056_A_48d8b29115d1",
+        "member_ids": [
+          "IDENT_LAW_056_A_48d8b29115d1"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R0: -R0 + R2*(Mod(S1, 4093)) == 0",
+          "S3: Mod(63 - Mod(S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_009",
+        "representative_id": "IDENT_LAW_058_B_0903c20fe87c",
+        "member_ids": [
+          "IDENT_LAW_058_B_0903c20fe87c"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0*(Mod(S7, 4093)) - R2 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_010",
+        "representative_id": "IDENT_LAW_059_A_43e9781d442b",
+        "member_ids": [
+          "IDENT_LAW_059_A_43e9781d442b"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R3: R2*(Mod(S5, 4093)) - R3 == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S0 + S1, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_011",
+        "representative_id": "IDENT_LAW_060_B_04aaacced485",
+        "member_ids": [
+          "IDENT_LAW_060_B_04aaacced485",
+          "IDENT_LAW_075_B_7b7441ddae0f"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R3: -R3 == 0",
+          "S5: Mod(75 - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_012",
+        "representative_id": "IDENT_LAW_065_B_c5d46081d94b",
+        "member_ids": [
+          "IDENT_LAW_065_B_c5d46081d94b"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 + R1 == 0",
+          "R3: -R3 == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod((Mod(S3, 4093))**2, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_013",
+        "representative_id": "IDENT_LAW_067_B_e39c3f604dd3",
+        "member_ids": [
+          "IDENT_LAW_067_B_e39c3f604dd3"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R2 + 2*R3 == 0",
+          "S4: Mod(-Mod(S4, 4093) + Mod(S2 + 4092*S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_014",
+        "representative_id": "IDENT_LAW_068_B_2d68fb4c48e3",
+        "member_ids": [
+          "IDENT_LAW_068_B_2d68fb4c48e3"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S0, 4093)) - R2 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_015",
+        "representative_id": "IDENT_LAW_070_B_c78fce873c17",
+        "member_ids": [
+          "IDENT_LAW_070_B_c78fce873c17"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "S2: Mod(-Mod(S2, 4093) + Mod(S1 + S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S4 + S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_016",
+        "representative_id": "IDENT_LAW_074_B_b928f4347e3b",
+        "member_ids": [
+          "IDENT_LAW_074_B_b928f4347e3b"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R3: -R3 == 0",
+          "S3: Mod(-Mod(S3, 4093) + Mod(S1 + S4, 4093), 4093) == 0",
+          "S7: Mod(56 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_017",
+        "representative_id": "DIV_0e9a53f84344",
+        "member_ids": [
+          "DIV_0e9a53f84344"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod((Mod(S5, 4093))**2, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_018",
+        "representative_id": "DIV_1229d6897307",
+        "member_ids": [
+          "DIV_1229d6897307"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 - R2 == 0",
+          "S0: Mod(-Mod(S0, 4093) + Mod(S2 + S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_019",
+        "representative_id": "DIV_9c24e1bf3785",
+        "member_ids": [
+          "DIV_9c24e1bf3785"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1 - R2 - R3 == 0",
+          "S0: Mod(M0(Mod(Mod(S3*S4, 4093), 64)) - Mod(S0, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_020",
+        "representative_id": "DIV_f478c12a925c",
+        "member_ids": [
+          "DIV_f478c12a925c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R0: -R0 + R1*(Mod(S2, 4093)) + R3 == 0",
+          "R2: R1*(Mod(S2, 4093)) - R2 == 0",
+          "S1: Mod(-Mod(S1, 4093) + Mod(4092*S0 + S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_021",
+        "representative_id": "DIV_3808ee1a1890",
+        "member_ids": [
+          "DIV_3808ee1a1890"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R0 + R1 - R2 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_022",
+        "representative_id": "DIV_e48c317c86dc",
+        "member_ids": [
+          "DIV_e48c317c86dc"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R3: R0*(Mod(S2, 4093)) - R3 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_023",
+        "representative_id": "DIV_ad143e4b711d",
+        "member_ids": [
+          "DIV_ad143e4b711d"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 - R2 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_024",
+        "representative_id": "DIV_85a74a512857",
+        "member_ids": [
+          "DIV_85a74a512857"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R3: R1 + R2 - R3 == 0",
+          "S3: Mod(106 - Mod(S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_025",
+        "representative_id": "DIV_9248f3e54333",
+        "member_ids": [
+          "DIV_9248f3e54333"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "S0: Mod(92 - Mod(S0, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_026",
+        "representative_id": "DIV_460ca35e4dbb",
+        "member_ids": [
+          "DIV_460ca35e4dbb"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R0: -R0 + R1 == 0",
+          "R3: R1 + R2 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_027",
+        "representative_id": "DIV_c9a5f2ecc8a3",
+        "member_ids": [
+          "DIV_c9a5f2ecc8a3"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: -R0 - R1 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_028",
+        "representative_id": "DIV_73de665119b4",
+        "member_ids": [
+          "DIV_73de665119b4"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R3: -R1 - R3 == 0",
+          "S7: Mod(57 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_029",
+        "representative_id": "DIV_36a3a64b285b",
+        "member_ids": [
+          "DIV_36a3a64b285b"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 - R1 - R2 == 0",
+          "S0: Mod(M0(Mod(M0(Mod(S5, 64)), 64)) - Mod(S0, 4093), 4093) == 0",
+          "S2: Mod(M0(Mod(S5, 64)) - Mod(S2, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_030",
+        "representative_id": "DIV_32429338cd98",
+        "member_ids": [
+          "DIV_32429338cd98"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S2, 4093)) - R2 == 0",
+          "S1: Mod(89 - Mod(S1, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_031",
+        "representative_id": "DIV_6b08f937d6f7",
+        "member_ids": [
+          "DIV_6b08f937d6f7"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: R1*(Mod(S4, 4093))**2 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_032",
+        "representative_id": "DIV_11d793a432bc",
+        "member_ids": [
+          "DIV_11d793a432bc"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 - R2 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_033",
+        "representative_id": "DIV_cf33b5685120",
+        "member_ids": [
+          "DIV_cf33b5685120"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "S5: Mod(11 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(11*(Mod(S3, 4093)) - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(31*R0 + 31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_034",
+        "representative_id": "DIV_ef935c5625d2",
+        "member_ids": [
+          "DIV_ef935c5625d2"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 3*R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(62*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_035",
+        "representative_id": "DIV_8ffca7c3ede8",
+        "member_ids": [
+          "DIV_8ffca7c3ede8"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_036",
+        "representative_id": "DIV_a9e0a1e97d3a",
+        "member_ids": [
+          "DIV_a9e0a1e97d3a"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -R3 - (R0 - R1)*Mod(S3, 4093) == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_037",
+        "representative_id": "DIV_3e6f0da64d2b",
+        "member_ids": [
+          "DIV_3e6f0da64d2b"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_038",
+        "representative_id": "DIV_922debb8bdae",
+        "member_ids": [
+          "DIV_922debb8bdae"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "num_constraints": 1
+      },
+      {
+        "class_id": "CLASS_039",
+        "representative_id": "DIV_3db0524dcf4f",
+        "member_ids": [
+          "DIV_3db0524dcf4f",
+          "DIV_d0def6690d2d"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(62*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_040",
+        "representative_id": "DIV_8a23d7c43a3d",
+        "member_ids": [
+          "DIV_8a23d7c43a3d"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R0 - R3 == 0",
+          "S5: Mod(M0(Mod(S0, 64)) - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_041",
+        "representative_id": "DIV_2e48d827cff6",
+        "member_ids": [
+          "DIV_2e48d827cff6"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 3*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod(31*R1 + 17, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_042",
+        "representative_id": "DIV_38402b776d5b",
+        "member_ids": [
+          "DIV_38402b776d5b"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S3, 4093)) - R2 == 0",
+          "R3: -R1 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_043",
+        "representative_id": "DIV_aa3896246624",
+        "member_ids": [
+          "DIV_aa3896246624"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(4092*S0 + S4, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_044",
+        "representative_id": "DIV_cba9470fa3c5",
+        "member_ids": [
+          "DIV_cba9470fa3c5"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod(31*R1 + 17, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_045",
+        "representative_id": "DIV_3326beb25333",
+        "member_ids": [
+          "DIV_3326beb25333"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0*(Mod(S3, 4093)) - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_046",
+        "representative_id": "DIV_cdb11276274f",
+        "member_ids": [
+          "DIV_cdb11276274f"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0*(Mod(S3, 4093)) - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_047",
+        "representative_id": "DIV_1adee2921d57",
+        "member_ids": [
+          "DIV_1adee2921d57"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(2*(Mod(S4, 4093)) - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_048",
+        "representative_id": "DIV_bb5de35eb9a0",
+        "member_ids": [
+          "DIV_bb5de35eb9a0"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_049",
+        "representative_id": "DIV_3934f50870fd",
+        "member_ids": [
+          "DIV_3934f50870fd"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + 2*(Mod(S0 + 4092*S4, 4093)), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_050",
+        "representative_id": "DIV_30964b374606",
+        "member_ids": [
+          "DIV_30964b374606"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S3, 4093)) - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(4092*S0 + S4, 4093), 4093) == 0",
+          "S7: Mod(11 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_051",
+        "representative_id": "DIV_b6cee31952bc",
+        "member_ids": [
+          "DIV_b6cee31952bc"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_052",
+        "representative_id": "DIV_1c7644d72b33",
+        "member_ids": [
+          "DIV_1c7644d72b33"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(5 - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_053",
+        "representative_id": "DIV_ff5b6d711d43",
+        "member_ids": [
+          "DIV_ff5b6d711d43",
+          "DIV_29f7f8e14737",
+          "DIV_9bd76edee6c3"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_054",
+        "representative_id": "DIV_432985be8d17",
+        "member_ids": [
+          "DIV_432985be8d17"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S1, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_055",
+        "representative_id": "DIV_1b752b827015",
+        "member_ids": [
+          "DIV_1b752b827015"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_056",
+        "representative_id": "DIV_f5481fb58eb9",
+        "member_ids": [
+          "DIV_f5481fb58eb9"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_057",
+        "representative_id": "DIV_b7f7f08d49c5",
+        "member_ids": [
+          "DIV_b7f7f08d49c5"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_058",
+        "representative_id": "DIV_66e767624385",
+        "member_ids": [
+          "DIV_66e767624385"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 4*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_059",
+        "representative_id": "DIV_0b5abd9c4e20",
+        "member_ids": [
+          "DIV_0b5abd9c4e20"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(1 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(Mod(S0, 4093) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_060",
+        "representative_id": "DIV_920a4f3f6e56",
+        "member_ids": [
+          "DIV_920a4f3f6e56"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0*S3**2, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(62*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_061",
+        "representative_id": "DIV_ef5e62b1b9c0",
+        "member_ids": [
+          "DIV_ef5e62b1b9c0"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_062",
+        "representative_id": "DIV_3b2f1a52bcec",
+        "member_ids": [
+          "DIV_3b2f1a52bcec"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: R1*(Mod(S3, 4093))**2 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(2 - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_063",
+        "representative_id": "DIV_2ef253dad8ec",
+        "member_ids": [
+          "DIV_2ef253dad8ec"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(1 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_064",
+        "representative_id": "DIV_8dff81a43a4c",
+        "member_ids": [
+          "DIV_8dff81a43a4c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: -R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_065",
+        "representative_id": "DIV_9a040e99c6aa",
+        "member_ids": [
+          "DIV_9a040e99c6aa"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_066",
+        "representative_id": "DIV_a87b655a5a8e",
+        "member_ids": [
+          "DIV_a87b655a5a8e"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(62*R0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_067",
+        "representative_id": "DIV_ca8b875e4d66",
+        "member_ids": [
+          "DIV_ca8b875e4d66"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 2*R0*(Mod(S3, 4093)) - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_068",
+        "representative_id": "DIV_5987382c41fd",
+        "member_ids": [
+          "DIV_5987382c41fd"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: R1*(Mod(S4, 4093)) - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod((Mod(S3, 4093))**2, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_069",
+        "representative_id": "DIV_7ee61be7fb8d",
+        "member_ids": [
+          "DIV_7ee61be7fb8d"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: -R0 + R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod(31*R1 + 17, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_070",
+        "representative_id": "DIV_414d69dbb422",
+        "member_ids": [
+          "DIV_414d69dbb422"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(M0(Mod(S3, 64)) - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_071",
+        "representative_id": "DIV_4d03b91d5e1b",
+        "member_ids": [
+          "DIV_4d03b91d5e1b"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R0 - R1 - R3 == 0",
+          "S5: Mod(1 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(Mod(S4, 4093) - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(126852*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_072",
+        "representative_id": "DIV_79c026c4bec2",
+        "member_ids": [
+          "DIV_79c026c4bec2"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: R0*(Mod(S4, 4093)) - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(-31*R1 + S3 + 4076, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_073",
+        "representative_id": "DIV_9bc9e2ca0058",
+        "member_ids": [
+          "DIV_9bc9e2ca0058",
+          "DIV_5c5299955409"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_074",
+        "representative_id": "DIV_1cc9607580fb",
+        "member_ids": [
+          "DIV_1cc9607580fb"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(4092*S0 + S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_075",
+        "representative_id": "DIV_d0602a7df45c",
+        "member_ids": [
+          "DIV_d0602a7df45c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: R0*(Mod(S0, 4093)) - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_076",
+        "representative_id": "DIV_d4219ce335ad",
+        "member_ids": [
+          "DIV_d4219ce335ad"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3*S4, 4093), 4093) == 0",
+          "S6: Mod(11 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(4092*S4 + 11, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_077",
+        "representative_id": "DIV_1842210a6cf1",
+        "member_ids": [
+          "DIV_1842210a6cf1",
+          "DIV_dfa213953e6f",
+          "DIV_a9af59f727ad"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 2*R1*(Mod(S3, 4093)) - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_078",
+        "representative_id": "DIV_8169557b00f2",
+        "member_ids": [
+          "DIV_8169557b00f2"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(4092*S0*S3 + S4, 4093), 4093) == 0",
+          "S7: Mod(3 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_079",
+        "representative_id": "DIV_26c2925383a0",
+        "member_ids": [
+          "DIV_26c2925383a0",
+          "DIV_145923d04f14"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S4, 4093)) - R1 - R2 == 0",
+          "R3: R1*(Mod(S4, 4093)) - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_080",
+        "representative_id": "DIV_ba3eb9b2fb7c",
+        "member_ids": [
+          "DIV_ba3eb9b2fb7c"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_081",
+        "representative_id": "DIV_8d926431e7bb",
+        "member_ids": [
+          "DIV_8d926431e7bb"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(17 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_082",
+        "representative_id": "DIV_2b0e0a60f8e2",
+        "member_ids": [
+          "DIV_2b0e0a60f8e2"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 - R2 == 0",
+          "R3: -R0 + R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_083",
+        "representative_id": "DIV_189882ae0d24",
+        "member_ids": [
+          "DIV_189882ae0d24"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S4, 4093), 4093) == 0",
+          "S6: Mod(5 - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_084",
+        "representative_id": "DIV_d12fcb4ef0dc",
+        "member_ids": [
+          "DIV_d12fcb4ef0dc"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod((Mod(S4, 4093))**2, 4093), 4093) == 0",
+          "S6: Mod(5 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(M0(5) - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_085",
+        "representative_id": "DIV_1906a4fffcf3",
+        "member_ids": [
+          "DIV_1906a4fffcf3"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: -R0 + 2*R1 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_086",
+        "representative_id": "DIV_9c15997ea097",
+        "member_ids": [
+          "DIV_9c15997ea097"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1*Mod(S3, 4093) - R1 - R2 == 0",
+          "R3: -R1*Mod(S3, 4093) - R3 == 0",
+          "S5: Mod(2 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(31*R1 + S3 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_087",
+        "representative_id": "DIV_6b8602e88624",
+        "member_ids": [
+          "DIV_6b8602e88624"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_088",
+        "representative_id": "DIV_ac81214812ef",
+        "member_ids": [
+          "DIV_ac81214812ef"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S4, 4093)) + R1 - R2 == 0",
+          "R3: R1*(Mod(S4, 4093)) - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0 + S3 + 4092*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_089",
+        "representative_id": "DIV_ff249d0e7482",
+        "member_ids": [
+          "DIV_ff249d0e7482"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + 2*(Mod(S0 + 4092*S4, 4093)), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(4092*S0 + M0(Mod(S4, 64)), 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_090",
+        "representative_id": "DIV_7984885c9766",
+        "member_ids": [
+          "DIV_7984885c9766"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 - 3*R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_091",
+        "representative_id": "DIV_b5b57a08c223",
+        "member_ids": [
+          "DIV_b5b57a08c223"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: R0 + R1 - R3 == 0",
+          "S5: Mod(7 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_092",
+        "representative_id": "DIV_9078ed313fa8",
+        "member_ids": [
+          "DIV_9078ed313fa8"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R0 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_093",
+        "representative_id": "DIV_6952645e1d9d",
+        "member_ids": [
+          "DIV_6952645e1d9d"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_094",
+        "representative_id": "DIV_59a3a9c95904",
+        "member_ids": [
+          "DIV_59a3a9c95904",
+          "DIV_55d63a24e8fe"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: R1*(Mod(S3, 4093)) - R3 == 0",
+          "S5: Mod(M0(Mod(S4, 64)) - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(1 - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_095",
+        "representative_id": "DIV_e2a7acf4a958",
+        "member_ids": [
+          "DIV_e2a7acf4a958"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3**2*S4, 4093), 4093) == 0",
+          "S6: Mod(2 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(2 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_096",
+        "representative_id": "DIV_a9cb9884ee2d",
+        "member_ids": [
+          "DIV_a9cb9884ee2d",
+          "DIV_33ec03379378"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(2*(Mod(S3, 4093)) - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(S4, 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_097",
+        "representative_id": "DIV_26e280287fd4",
+        "member_ids": [
+          "DIV_26e280287fd4"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 - 31*R1 + 17, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_098",
+        "representative_id": "DIV_c7a142464358",
+        "member_ids": [
+          "DIV_c7a142464358"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R1*(Mod(S4, 4093)) + R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_099",
+        "representative_id": "DIV_dd6709c395cd",
+        "member_ids": [
+          "DIV_dd6709c395cd"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R1 - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 + 4092*S0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_100",
+        "representative_id": "DIV_0095b4f5c1b2",
+        "member_ids": [
+          "DIV_0095b4f5c1b2"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0*(Mod(S0, 4093)) - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 + 4092*S0 + 17, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_101",
+        "representative_id": "DIV_636fb305c4b9",
+        "member_ids": [
+          "DIV_636fb305c4b9"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: 4*R0 + 8*R1 - R3 == 0"
+        ],
+        "num_constraints": 2
+      },
+      {
+        "class_id": "CLASS_102",
+        "representative_id": "DIV_ad91bf86eb4e",
+        "member_ids": [
+          "DIV_ad91bf86eb4e"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3 + 4092*S4, 4093), 4093) == 0",
+          "S6: Mod(Mod(S3, 4093) - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S3*(S3 + 4092*S4), 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_103",
+        "representative_id": "DIV_d2289940a224",
+        "member_ids": [
+          "DIV_d2289940a224"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(5 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(2*(Mod(S0, 4093)) - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_104",
+        "representative_id": "DIV_2cd6eb6cc99a",
+        "member_ids": [
+          "DIV_2cd6eb6cc99a"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -2*R0 + 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3 + 4092*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      },
+      {
+        "class_id": "CLASS_105",
+        "representative_id": "DIV_751fdb928c69",
+        "member_ids": [
+          "DIV_751fdb928c69",
+          "DIV_f8fb2fb0ba5e"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3 + 8184*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3 + 4092*S4, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S3 + 4092*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_106",
+        "representative_id": "DIV_f3290a3b9a06",
+        "member_ids": [
+          "DIV_f3290a3b9a06"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(-31*R1 + S3 + 4076, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_107",
+        "representative_id": "DIV_29fb47ab59f5",
+        "member_ids": [
+          "DIV_29fb47ab59f5",
+          "DIV_f4691c92d7b1"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: 3*R0*(Mod(4092*S3 + S4, 4093)) - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(4092*S3 + S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0 + S4, 4093), 4093) == 0",
+          "S7: Mod(3 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_108",
+        "representative_id": "DIV_2d1bc085a8ff",
+        "member_ids": [
+          "DIV_2d1bc085a8ff"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: 2*R0 + 2*R1 - R3 == 0",
+          "S5: Mod(M0(Mod(S4, 64)) - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(M0(Mod(S4, 64))*(Mod(S3, 4093)), 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_109",
+        "representative_id": "DIV_eeab84714b1d",
+        "member_ids": [
+          "DIV_eeab84714b1d"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: -R1 - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(17 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3 + 4076, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_110",
+        "representative_id": "DIV_312c65c1319f",
+        "member_ids": [
+          "DIV_312c65c1319f"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: R0 - R3 == 0",
+          "S5: Mod(17 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod((Mod(S4, 4093))**2, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_111",
+        "representative_id": "DIV_d527cc56062a",
+        "member_ids": [
+          "DIV_d527cc56062a"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(7 - Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod((Mod(S0, 4093))**2, 4093), 4093) == 0"
+        ],
+        "num_constraints": 4
+      },
+      {
+        "class_id": "CLASS_112",
+        "representative_id": "DIV_04223bb33a94",
+        "member_ids": [
+          "DIV_04223bb33a94"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S3*S4, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_113",
+        "representative_id": "DIV_219c861c8ab7",
+        "member_ids": [
+          "DIV_219c861c8ab7"
+        ],
+        "is_pure_register": true,
+        "fixed_point_equations": [
+          "R2: R0 + R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093), 4093) == 0",
+          "S6: Mod(2*(Mod(S4, 4093)) - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(17 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "num_constraints": 5
+      },
+      {
+        "class_id": "CLASS_114",
+        "representative_id": "DIV_4f6837e34613",
+        "member_ids": [
+          "DIV_4f6837e34613"
+        ],
+        "is_pure_register": false,
+        "fixed_point_equations": [
+          "R2: -R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(M0(Mod(S0, 64)) - Mod(S5, 4093), 4093) == 0"
+        ],
+        "num_constraints": 3
+      }
+    ],
+    "strict_nested_pairs": [
+      {
+        "pair_id": "NEST_001",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_a9e0a1e97d3a",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              167,
+              1202,
+              1761,
+              1846
+            ],
+            "s": [
+              2078,
+              1662,
+              273,
+              1920,
+              4086,
+              837,
+              4016,
+              227
+            ],
+            "mem": {
+              "0": 1075,
+              "1": 3798,
+              "2": 1101,
+              "3": 3129,
+              "4": 3071,
+              "5": 2622,
+              "6": 2953,
+              "7": 3291,
+              "8": 3248,
+              "9": 846,
+              "10": 1727,
+              "11": 3684,
+              "12": 3605,
+              "13": 1160,
+              "14": 1978,
+              "15": 3345
+            }
+          },
+          "A_output": {
+            "g": [
+              167,
+              1202,
+              1035,
+              1846
+            ],
+            "s": [
+              2078,
+              1662,
+              273,
+              1920,
+              4086,
+              837,
+              4016,
+              227
+            ],
+            "mem": {
+              "0": 1075,
+              "1": 3798,
+              "2": 1101,
+              "3": 3129,
+              "4": 3071,
+              "5": 2622,
+              "6": 2953,
+              "7": 3291,
+              "8": 3248,
+              "9": 846,
+              "10": 1727,
+              "11": 3684,
+              "12": 3605,
+              "13": 1160,
+              "14": 1978,
+              "15": 3345
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              167,
+              1202,
+              1035,
+              2095
+            ],
+            "s": [
+              2078,
+              1662,
+              273,
+              1920,
+              4086,
+              3451,
+              4016,
+              227
+            ],
+            "mem": {
+              "0": 1920,
+              "1": 3798,
+              "2": 1101,
+              "3": 3129,
+              "4": 3071,
+              "5": 2622,
+              "6": 2953,
+              "7": 3291,
+              "8": 3248,
+              "9": 846,
+              "10": 1727,
+              "11": 3684,
+              "12": 3605,
+              "13": 1160,
+              "14": 1978,
+              "15": 3345
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -R3 - (R0 - R1)*Mod(S3, 4093) == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      },
+      {
+        "pair_id": "NEST_002",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_f5481fb58eb9",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2293,
+              3276,
+              3485,
+              569
+            ],
+            "s": [
+              19,
+              3968,
+              1821,
+              1686,
+              1242,
+              147,
+              289,
+              964
+            ],
+            "mem": {
+              "0": 1591,
+              "1": 2457,
+              "2": 3398,
+              "3": 3503,
+              "4": 1104,
+              "5": 3031,
+              "6": 1097,
+              "7": 2445,
+              "8": 3128,
+              "9": 195,
+              "10": 288,
+              "11": 547,
+              "12": 2167,
+              "13": 3555,
+              "14": 987,
+              "15": 3167
+            }
+          },
+          "A_output": {
+            "g": [
+              2293,
+              3276,
+              983,
+              569
+            ],
+            "s": [
+              19,
+              3968,
+              1821,
+              1686,
+              1242,
+              147,
+              289,
+              964
+            ],
+            "mem": {
+              "0": 1591,
+              "1": 2457,
+              "2": 3398,
+              "3": 3503,
+              "4": 1104,
+              "5": 3031,
+              "6": 1097,
+              "7": 2445,
+              "8": 3128,
+              "9": 195,
+              "10": 288,
+              "11": 547,
+              "12": 2167,
+              "13": 3555,
+              "14": 987,
+              "15": 3167
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2293,
+              3276,
+              983,
+              569
+            ],
+            "s": [
+              19,
+              3968,
+              1821,
+              1686,
+              1242,
+              1839,
+              289,
+              964
+            ],
+            "mem": {
+              "0": 1591,
+              "1": 2457,
+              "2": 3398,
+              "3": 3503,
+              "4": 1104,
+              "5": 3031,
+              "6": 1097,
+              "7": 2445,
+              "8": 3128,
+              "9": 195,
+              "10": 288,
+              "11": 547,
+              "12": 2167,
+              "13": 3555,
+              "14": 987,
+              "15": 3167,
+              "19": 19
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 1
+      },
+      {
+        "pair_id": "NEST_003",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_2ef253dad8ec",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              258,
+              3750,
+              3441,
+              3542
+            ],
+            "s": [
+              3084,
+              2080,
+              3774,
+              2650,
+              1215,
+              2471,
+              1285,
+              3955
+            ],
+            "mem": {
+              "0": 3109,
+              "1": 3146,
+              "2": 2473,
+              "3": 3927,
+              "4": 2934,
+              "5": 3710,
+              "6": 2768,
+              "7": 2824,
+              "8": 1183,
+              "9": 3002,
+              "10": 2003,
+              "11": 1052,
+              "12": 3473,
+              "13": 680,
+              "14": 2633,
+              "15": 2382
+            }
+          },
+          "A_output": {
+            "g": [
+              258,
+              3750,
+              3492,
+              3542
+            ],
+            "s": [
+              3084,
+              2080,
+              3774,
+              2650,
+              1215,
+              2471,
+              1285,
+              3955
+            ],
+            "mem": {
+              "0": 3109,
+              "1": 3146,
+              "2": 2473,
+              "3": 3927,
+              "4": 2934,
+              "5": 3710,
+              "6": 2768,
+              "7": 2824,
+              "8": 1183,
+              "9": 3002,
+              "10": 2003,
+              "11": 1052,
+              "12": 3473,
+              "13": 680,
+              "14": 2633,
+              "15": 2382
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              258,
+              3750,
+              3492,
+              3542
+            ],
+            "s": [
+              3084,
+              2080,
+              3774,
+              2650,
+              1215,
+              1851,
+              1,
+              1663
+            ],
+            "mem": {
+              "0": 3109,
+              "1": 3146,
+              "2": 2473,
+              "3": 3927,
+              "4": 2934,
+              "5": 3710,
+              "6": 2768,
+              "7": 2824,
+              "8": 1183,
+              "9": 3002,
+              "10": 2003,
+              "11": 1052,
+              "12": 3473,
+              "13": 680,
+              "14": 2633,
+              "15": 2382
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(1 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 3
+      },
+      {
+        "pair_id": "NEST_004",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_26e280287fd4",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              151,
+              1290,
+              2110,
+              306
+            ],
+            "s": [
+              386,
+              1690,
+              1237,
+              3057,
+              1072,
+              2013,
+              3120,
+              2276
+            ],
+            "mem": {
+              "0": 1807,
+              "1": 2902,
+              "2": 3275,
+              "3": 1612,
+              "4": 4019,
+              "5": 988,
+              "6": 2915,
+              "7": 3921,
+              "8": 1125,
+              "9": 2073,
+              "10": 2111,
+              "11": 1440,
+              "12": 3226,
+              "13": 3029,
+              "14": 649,
+              "15": 3236
+            }
+          },
+          "A_output": {
+            "g": [
+              151,
+              1290,
+              1139,
+              306
+            ],
+            "s": [
+              386,
+              1690,
+              1237,
+              3057,
+              1072,
+              2013,
+              3120,
+              2276
+            ],
+            "mem": {
+              "0": 1807,
+              "1": 2902,
+              "2": 3275,
+              "3": 1612,
+              "4": 4019,
+              "5": 988,
+              "6": 2915,
+              "7": 3921,
+              "8": 1125,
+              "9": 2073,
+              "10": 2111,
+              "11": 1440,
+              "12": 3226,
+              "13": 3029,
+              "14": 649,
+              "15": 3236
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              151,
+              1290,
+              1139,
+              1290
+            ],
+            "s": [
+              386,
+              1690,
+              1237,
+              3057,
+              1072,
+              3170,
+              1545,
+              3443
+            ],
+            "mem": {
+              "0": 1807,
+              "1": 2902,
+              "2": 3275,
+              "3": 1612,
+              "4": 4019,
+              "5": 988,
+              "6": 2915,
+              "7": 3921,
+              "8": 1125,
+              "9": 2073,
+              "10": 2111,
+              "11": 1440,
+              "12": 3226,
+              "13": 3029,
+              "14": 649,
+              "15": 3236
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(31*R0 - 31*R1 + 17, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S0 + S3, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 4
+      },
+      {
+        "pair_id": "NEST_005",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_d2289940a224",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2283,
+              2891,
+              3440,
+              2235
+            ],
+            "s": [
+              1663,
+              200,
+              2461,
+              1129,
+              1645,
+              1151,
+              3122,
+              1181
+            ],
+            "mem": {
+              "0": 2342,
+              "1": 841,
+              "2": 1597,
+              "3": 4073,
+              "4": 3572,
+              "5": 915,
+              "6": 650,
+              "7": 2083,
+              "8": 3617,
+              "9": 1768,
+              "10": 4033,
+              "11": 3500,
+              "12": 3816,
+              "13": 4073,
+              "14": 1894,
+              "15": 1773
+            }
+          },
+          "A_output": {
+            "g": [
+              2283,
+              2891,
+              608,
+              2235
+            ],
+            "s": [
+              1663,
+              200,
+              2461,
+              1129,
+              1645,
+              1151,
+              3122,
+              1181
+            ],
+            "mem": {
+              "0": 2342,
+              "1": 841,
+              "2": 1597,
+              "3": 4073,
+              "4": 3572,
+              "5": 915,
+              "6": 650,
+              "7": 2083,
+              "8": 3617,
+              "9": 1768,
+              "10": 4033,
+              "11": 3500,
+              "12": 3816,
+              "13": 4073,
+              "14": 1894,
+              "15": 1773
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2283,
+              2891,
+              608,
+              1689
+            ],
+            "s": [
+              1663,
+              200,
+              2461,
+              1129,
+              1645,
+              3685,
+              5,
+              3326
+            ],
+            "mem": {
+              "0": 2342,
+              "1": 841,
+              "2": 1597,
+              "3": 4073,
+              "4": 3572,
+              "5": 915,
+              "6": 650,
+              "7": 2083,
+              "8": 3617,
+              "9": 1768,
+              "10": 4033,
+              "11": 3500,
+              "12": 3816,
+              "13": 4073,
+              "14": 1894,
+              "15": 1773
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(5 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(2*(Mod(S0, 4093)) - Mod(S7, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 4
+      },
+      {
+        "pair_id": "NEST_006",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_2cd6eb6cc99a",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              1991,
+              2199,
+              732,
+              4039
+            ],
+            "s": [
+              2992,
+              91,
+              1611,
+              3291,
+              3161,
+              3187,
+              2216,
+              2924
+            ],
+            "mem": {
+              "0": 1366,
+              "1": 3213,
+              "2": 296,
+              "3": 2318,
+              "4": 109,
+              "5": 612,
+              "6": 2320,
+              "7": 186,
+              "8": 4047,
+              "9": 1403,
+              "10": 3578,
+              "11": 3213,
+              "12": 1279,
+              "13": 3122,
+              "14": 1351,
+              "15": 3323
+            }
+          },
+          "A_output": {
+            "g": [
+              1991,
+              2199,
+              208,
+              4039
+            ],
+            "s": [
+              2992,
+              91,
+              1611,
+              3291,
+              3161,
+              3187,
+              2216,
+              2924
+            ],
+            "mem": {
+              "0": 1366,
+              "1": 3213,
+              "2": 296,
+              "3": 2318,
+              "4": 109,
+              "5": 612,
+              "6": 2320,
+              "7": 186,
+              "8": 4047,
+              "9": 1403,
+              "10": 3578,
+              "11": 3213,
+              "12": 1279,
+              "13": 3122,
+              "14": 1351,
+              "15": 3323
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              1991,
+              2199,
+              208,
+              416
+            ],
+            "s": [
+              2992,
+              91,
+              1611,
+              3291,
+              3161,
+              130,
+              2216,
+              2924
+            ],
+            "mem": {
+              "0": 1366,
+              "1": 3213,
+              "2": 296,
+              "3": 2318,
+              "4": 109,
+              "5": 612,
+              "6": 2320,
+              "7": 186,
+              "8": 4047,
+              "9": 1403,
+              "10": 3578,
+              "11": 3213,
+              "12": 1279,
+              "13": 3122,
+              "14": 1351,
+              "15": 3323,
+              "25": 130,
+              "48": 2992
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -2*R0 + 2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3 + 4092*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      },
+      {
+        "pair_id": "NEST_007",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_04223bb33a94",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              3319,
+              2276,
+              2845,
+              3027
+            ],
+            "s": [
+              639,
+              2625,
+              3077,
+              1149,
+              385,
+              4011,
+              1008,
+              58
+            ],
+            "mem": {
+              "0": 1296,
+              "1": 543,
+              "2": 1590,
+              "3": 3072,
+              "4": 2600,
+              "5": 2559,
+              "6": 3262,
+              "7": 3676,
+              "8": 2089,
+              "9": 1819,
+              "10": 2228,
+              "11": 3042,
+              "12": 2037,
+              "13": 3672,
+              "14": 1769,
+              "15": 2559
+            }
+          },
+          "A_output": {
+            "g": [
+              3319,
+              2276,
+              3050,
+              3027
+            ],
+            "s": [
+              639,
+              2625,
+              3077,
+              1149,
+              385,
+              4011,
+              1008,
+              58
+            ],
+            "mem": {
+              "0": 1296,
+              "1": 543,
+              "2": 1590,
+              "3": 3072,
+              "4": 2600,
+              "5": 2559,
+              "6": 3262,
+              "7": 3676,
+              "8": 2089,
+              "9": 1819,
+              "10": 2228,
+              "11": 3042,
+              "12": 2037,
+              "13": 3672,
+              "14": 1769,
+              "15": 2559
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              3319,
+              2276,
+              3050,
+              1817
+            ],
+            "s": [
+              639,
+              2625,
+              3077,
+              1149,
+              385,
+              428,
+              321,
+              321
+            ],
+            "mem": {
+              "0": 1296,
+              "1": 543,
+              "2": 1590,
+              "3": 3072,
+              "4": 2600,
+              "5": 2559,
+              "6": 3262,
+              "7": 3676,
+              "8": 2089,
+              "9": 1819,
+              "10": 2228,
+              "11": 3042,
+              "12": 2037,
+              "13": 3672,
+              "14": 1769,
+              "15": 2559
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R0 + R1 - R2 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R0 + R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(-31*R0 + 31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(S3*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 4
+      },
+      {
+        "pair_id": "NEST_008",
+        "id_a": "DIV_cba9470fa3c5",
+        "id_b": "DIV_2e48d827cff6",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": true,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              3564,
+              2879,
+              3364,
+              3681
+            ],
+            "s": [
+              152,
+              3238,
+              728,
+              3545,
+              2624,
+              15,
+              3664,
+              734
+            ],
+            "mem": {
+              "0": 3329,
+              "1": 1149,
+              "2": 2504,
+              "3": 2318,
+              "4": 656,
+              "5": 746,
+              "6": 493,
+              "7": 1465,
+              "8": 1336,
+              "9": 3073,
+              "10": 3030,
+              "11": 746,
+              "12": 4019,
+              "13": 200,
+              "14": 2619,
+              "15": 633
+            }
+          },
+          "A_output": {
+            "g": [
+              3564,
+              2879,
+              1665,
+              3681
+            ],
+            "s": [
+              152,
+              3238,
+              728,
+              3545,
+              2624,
+              3313,
+              0,
+              734
+            ],
+            "mem": {
+              "0": 3329,
+              "1": 1149,
+              "2": 2504,
+              "3": 2318,
+              "4": 656,
+              "5": 746,
+              "6": 493,
+              "7": 1465,
+              "8": 1336,
+              "9": 3073,
+              "10": 3030,
+              "11": 746,
+              "12": 4019,
+              "13": 200,
+              "14": 2619,
+              "15": 633
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              3564,
+              2879,
+              1665,
+              451
+            ],
+            "s": [
+              152,
+              3238,
+              728,
+              3545,
+              2624,
+              3313,
+              0,
+              734
+            ],
+            "mem": {
+              "0": 3329,
+              "1": 1149,
+              "2": 2504,
+              "3": 2318,
+              "4": 656,
+              "5": 746,
+              "6": 493,
+              "7": 1465,
+              "8": 1336,
+              "9": 3073,
+              "10": 3030,
+              "11": 746,
+              "12": 4019,
+              "13": 200,
+              "14": 2619,
+              "15": 633
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: 2*R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod(31*R1 + 17, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: 2*R1 - R2 == 0",
+          "R3: 3*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(M0(Mod(Mod(31*R1 + 17, 4093), 64)) - Mod(S6, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 1
+      },
+      {
+        "pair_id": "NEST_009",
+        "id_a": "DIV_bb5de35eb9a0",
+        "id_b": "DIV_8169557b00f2",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2493,
+              3533,
+              1186,
+              449
+            ],
+            "s": [
+              3656,
+              1790,
+              3491,
+              519,
+              2208,
+              1877,
+              587,
+              2032
+            ],
+            "mem": {
+              "0": 3249,
+              "1": 2110,
+              "2": 2669,
+              "3": 1083,
+              "4": 2957,
+              "5": 1775,
+              "6": 3289,
+              "7": 78,
+              "8": 2945,
+              "9": 2377,
+              "10": 2606,
+              "11": 200,
+              "12": 1304,
+              "13": 235,
+              "14": 3064,
+              "15": 2914
+            }
+          },
+          "A_output": {
+            "g": [
+              2493,
+              3533,
+              560,
+              1120
+            ],
+            "s": [
+              3656,
+              1790,
+              3491,
+              519,
+              2208,
+              1877,
+              587,
+              2032
+            ],
+            "mem": {
+              "0": 3249,
+              "1": 2110,
+              "2": 2669,
+              "3": 1083,
+              "4": 2957,
+              "5": 1775,
+              "6": 3289,
+              "7": 78,
+              "8": 2945,
+              "9": 2377,
+              "10": 2606,
+              "11": 200,
+              "12": 1304,
+              "13": 235,
+              "14": 3064,
+              "15": 2914
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2493,
+              3533,
+              560,
+              1120
+            ],
+            "s": [
+              3656,
+              1790,
+              3491,
+              519,
+              2208,
+              2405,
+              3896,
+              3
+            ],
+            "mem": {
+              "0": 3249,
+              "1": 2110,
+              "2": 2669,
+              "3": 1083,
+              "4": 2957,
+              "5": 1775,
+              "6": 3289,
+              "7": 78,
+              "8": 2945,
+              "9": 2377,
+              "10": 2606,
+              "11": 200,
+              "12": 1304,
+              "13": 235,
+              "14": 3064,
+              "15": 2914
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(4092*S0*S3 + S4, 4093), 4093) == 0",
+          "S7: Mod(3 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 3
+      },
+      {
+        "pair_id": "NEST_010",
+        "id_a": "DIV_bb5de35eb9a0",
+        "id_b": "DIV_e2a7acf4a958",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              1847,
+              3264,
+              1706,
+              899
+            ],
+            "s": [
+              3188,
+              3790,
+              3952,
+              1955,
+              1713,
+              227,
+              116,
+              573
+            ],
+            "mem": {
+              "0": 3067,
+              "1": 2798,
+              "2": 2344,
+              "3": 3076,
+              "4": 2295,
+              "5": 1170,
+              "6": 2752,
+              "7": 3748,
+              "8": 611,
+              "9": 1818,
+              "10": 469,
+              "11": 935,
+              "12": 3629,
+              "13": 2294,
+              "14": 1234,
+              "15": 538
+            }
+          },
+          "A_output": {
+            "g": [
+              1847,
+              3264,
+              829,
+              1658
+            ],
+            "s": [
+              3188,
+              3790,
+              3952,
+              1955,
+              1713,
+              227,
+              116,
+              573
+            ],
+            "mem": {
+              "0": 3067,
+              "1": 2798,
+              "2": 2344,
+              "3": 3076,
+              "4": 2295,
+              "5": 1170,
+              "6": 2752,
+              "7": 3748,
+              "8": 611,
+              "9": 1818,
+              "10": 469,
+              "11": 935,
+              "12": 3629,
+              "13": 2294,
+              "14": 1234,
+              "15": 538
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              1847,
+              3264,
+              829,
+              1658
+            ],
+            "s": [
+              3188,
+              3790,
+              3952,
+              1955,
+              1713,
+              759,
+              2,
+              2
+            ],
+            "mem": {
+              "0": 3067,
+              "1": 2798,
+              "2": 2344,
+              "3": 3076,
+              "4": 2295,
+              "5": 1170,
+              "6": 2752,
+              "7": 3748,
+              "8": 611,
+              "9": 1818,
+              "10": 469,
+              "11": 935,
+              "12": 3629,
+              "13": 2294,
+              "14": 1234,
+              "15": 538
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -2*R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0*S3**2*S4, 4093), 4093) == 0",
+          "S6: Mod(2 - Mod(S6, 4093), 4093) == 0",
+          "S7: Mod(2 - Mod(S7, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 3
+      },
+      {
+        "pair_id": "NEST_011",
+        "id_a": "DIV_3934f50870fd",
+        "id_b": "DIV_ff249d0e7482",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2975,
+              911,
+              162,
+              149
+            ],
+            "s": [
+              3756,
+              1797,
+              505,
+              2847,
+              1894,
+              2100,
+              1784,
+              3501
+            ],
+            "mem": {
+              "0": 2450,
+              "1": 4062,
+              "2": 2493,
+              "3": 3323,
+              "4": 4027,
+              "5": 1802,
+              "6": 3872,
+              "7": 1866,
+              "8": 3199,
+              "9": 3640,
+              "10": 457,
+              "11": 2060,
+              "12": 2944,
+              "13": 2315,
+              "14": 1379,
+              "15": 769
+            }
+          },
+          "A_output": {
+            "g": [
+              2975,
+              911,
+              3182,
+              149
+            ],
+            "s": [
+              3756,
+              1797,
+              505,
+              2847,
+              1894,
+              1862,
+              3724,
+              3501
+            ],
+            "mem": {
+              "0": 2450,
+              "1": 4062,
+              "2": 2493,
+              "3": 3323,
+              "4": 4027,
+              "5": 1802,
+              "6": 3872,
+              "7": 1866,
+              "8": 3199,
+              "9": 3640,
+              "10": 457,
+              "11": 2060,
+              "12": 2944,
+              "13": 2315,
+              "14": 1379,
+              "15": 769
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2975,
+              911,
+              3182,
+              1857
+            ],
+            "s": [
+              3756,
+              1797,
+              505,
+              2847,
+              1894,
+              1862,
+              3724,
+              337
+            ],
+            "mem": {
+              "0": 2450,
+              "1": 4062,
+              "2": 2493,
+              "3": 3323,
+              "4": 4027,
+              "5": 1802,
+              "6": 3872,
+              "7": 1866,
+              "8": 3199,
+              "9": 3640,
+              "10": 457,
+              "11": 2060,
+              "12": 2944,
+              "13": 2315,
+              "14": 1379,
+              "15": 769
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + 2*(Mod(S0 + 4092*S4, 4093)), 4093) == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: 2*R0 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S0 + 4092*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + 2*(Mod(S0 + 4092*S4, 4093)), 4093) == 0",
+          "S7: Mod(-Mod(S7, 4093) + Mod(4092*S0 + M0(Mod(S4, 64)), 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      },
+      {
+        "pair_id": "NEST_012",
+        "id_a": "DIV_b7f7f08d49c5",
+        "id_b": "DIV_ef5e62b1b9c0",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              410,
+              1450,
+              3348,
+              1919
+            ],
+            "s": [
+              938,
+              3072,
+              3527,
+              3727,
+              1550,
+              1912,
+              256,
+              606
+            ],
+            "mem": {
+              "0": 3668,
+              "1": 2000,
+              "2": 2138,
+              "3": 2306,
+              "4": 3129,
+              "5": 1726,
+              "6": 2051,
+              "7": 2224,
+              "8": 4003,
+              "9": 2468,
+              "10": 310,
+              "11": 2075,
+              "12": 898,
+              "13": 3211,
+              "14": 176,
+              "15": 123
+            }
+          },
+          "A_output": {
+            "g": [
+              410,
+              1450,
+              2643,
+              1919
+            ],
+            "s": [
+              938,
+              3072,
+              3527,
+              3727,
+              1550,
+              1627,
+              2096,
+              606
+            ],
+            "mem": {
+              "0": 3668,
+              "1": 2000,
+              "2": 2138,
+              "3": 2306,
+              "4": 3129,
+              "5": 1726,
+              "6": 2051,
+              "7": 2224,
+              "8": 4003,
+              "9": 2468,
+              "10": 310,
+              "11": 2075,
+              "12": 898,
+              "13": 3211,
+              "14": 176,
+              "15": 123
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              410,
+              1450,
+              2643,
+              2643
+            ],
+            "s": [
+              938,
+              3072,
+              3527,
+              3727,
+              1550,
+              1627,
+              2096,
+              606
+            ],
+            "mem": {
+              "0": 3668,
+              "1": 2000,
+              "2": 2138,
+              "3": 2306,
+              "4": 3129,
+              "5": 1726,
+              "6": 2051,
+              "7": 2224,
+              "8": 4003,
+              "9": 2468,
+              "10": 310,
+              "11": 2075,
+              "12": 898,
+              "13": 3211,
+              "14": 176,
+              "15": 123
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R1 - R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 1
+      },
+      {
+        "pair_id": "NEST_013",
+        "id_a": "DIV_b7f7f08d49c5",
+        "id_b": "DIV_9a040e99c6aa",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2748,
+              2448,
+              974,
+              2878
+            ],
+            "s": [
+              1248,
+              3143,
+              3268,
+              3618,
+              364,
+              3534,
+              1856,
+              222
+            ],
+            "mem": {
+              "0": 3747,
+              "1": 1974,
+              "2": 1525,
+              "3": 3333,
+              "4": 3558,
+              "5": 1063,
+              "6": 1703,
+              "7": 1053,
+              "8": 3259,
+              "9": 1710,
+              "10": 305,
+              "11": 933,
+              "12": 2291,
+              "13": 2456,
+              "14": 3984,
+              "15": 1843
+            }
+          },
+          "A_output": {
+            "g": [
+              2748,
+              2448,
+              1645,
+              2878
+            ],
+            "s": [
+              1248,
+              3143,
+              3268,
+              3618,
+              364,
+              3099,
+              1455,
+              222
+            ],
+            "mem": {
+              "0": 3747,
+              "1": 1974,
+              "2": 1525,
+              "3": 3333,
+              "4": 3558,
+              "5": 1063,
+              "6": 1703,
+              "7": 1053,
+              "8": 3259,
+              "9": 1710,
+              "10": 305,
+              "11": 933,
+              "12": 2291,
+              "13": 2456,
+              "14": 3984,
+              "15": 1843
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2748,
+              2448,
+              1645,
+              2878
+            ],
+            "s": [
+              1248,
+              3143,
+              3268,
+              3618,
+              364,
+              3099,
+              1455,
+              222
+            ],
+            "mem": {
+              "0": 3747,
+              "1": 1974,
+              "2": 1525,
+              "3": 3333,
+              "4": 3558,
+              "5": 1063,
+              "6": 1703,
+              "7": 1053,
+              "8": 3259,
+              "9": 1710,
+              "10": 305,
+              "11": 933,
+              "12": 2291,
+              "13": 2456,
+              "14": 3984,
+              "15": 1843,
+              "44": 1248
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(S3*S4, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3**2*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 0
+      },
+      {
+        "pair_id": "NEST_014",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_3e6f0da64d2b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              767,
+              1420,
+              60,
+              1917
+            ],
+            "s": [
+              1289,
+              3315,
+              3702,
+              3744,
+              3785,
+              3919,
+              4032,
+              3618
+            ],
+            "mem": {
+              "0": 4026,
+              "1": 2994,
+              "2": 3578,
+              "3": 2328,
+              "4": 3059,
+              "5": 1794,
+              "6": 3025,
+              "7": 2299,
+              "8": 1989,
+              "9": 2460,
+              "10": 2036,
+              "11": 1904,
+              "12": 1419,
+              "13": 86,
+              "14": 2582,
+              "15": 857
+            }
+          },
+          "A_output": {
+            "g": [
+              767,
+              1420,
+              2673,
+              0
+            ],
+            "s": [
+              1289,
+              3315,
+              3702,
+              3744,
+              3785,
+              3919,
+              4032,
+              3618
+            ],
+            "mem": {
+              "0": 4026,
+              "1": 2994,
+              "2": 3578,
+              "3": 2328,
+              "4": 3059,
+              "5": 1794,
+              "6": 3025,
+              "7": 2299,
+              "8": 1989,
+              "9": 2460,
+              "10": 2036,
+              "11": 1904,
+              "12": 1419,
+              "13": 86,
+              "14": 2582,
+              "15": 857
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              767,
+              1420,
+              2673,
+              0
+            ],
+            "s": [
+              1289,
+              3315,
+              3702,
+              3744,
+              3785,
+              3919,
+              4032,
+              3618
+            ],
+            "mem": {
+              "0": 4026,
+              "1": 2994,
+              "2": 3578,
+              "3": 2328,
+              "4": 3059,
+              "5": 1794,
+              "6": 3025,
+              "7": 2299,
+              "8": 1989,
+              "9": 1289,
+              "10": 2036,
+              "11": 1904,
+              "12": 1419,
+              "13": 86,
+              "14": 2582,
+              "15": 857
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "dimension_defect": 0
+      },
+      {
+        "pair_id": "NEST_015",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_1c7644d72b33",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              430,
+              291,
+              2718,
+              660
+            ],
+            "s": [
+              2224,
+              744,
+              3094,
+              542,
+              1802,
+              1404,
+              903,
+              1756
+            ],
+            "mem": {
+              "0": 2037,
+              "1": 2270,
+              "2": 3404,
+              "3": 1531,
+              "4": 2267,
+              "5": 1948,
+              "6": 934,
+              "7": 3281,
+              "8": 3484,
+              "9": 843,
+              "10": 2114,
+              "11": 272,
+              "12": 2319,
+              "13": 91,
+              "14": 623,
+              "15": 2968
+            }
+          },
+          "A_output": {
+            "g": [
+              430,
+              291,
+              3802,
+              0
+            ],
+            "s": [
+              2224,
+              744,
+              3094,
+              542,
+              1802,
+              1404,
+              903,
+              1756
+            ],
+            "mem": {
+              "0": 2037,
+              "1": 2270,
+              "2": 3404,
+              "3": 1531,
+              "4": 2267,
+              "5": 1948,
+              "6": 934,
+              "7": 3281,
+              "8": 3484,
+              "9": 843,
+              "10": 2114,
+              "11": 272,
+              "12": 2319,
+              "13": 91,
+              "14": 623,
+              "15": 2968
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              430,
+              291,
+              3802,
+              0
+            ],
+            "s": [
+              2224,
+              744,
+              3094,
+              542,
+              1802,
+              5,
+              903,
+              1756
+            ],
+            "mem": {
+              "0": 2037,
+              "1": 2270,
+              "2": 3404,
+              "3": 1531,
+              "4": 2267,
+              "5": 1948,
+              "6": 934,
+              "7": 3281,
+              "8": 3484,
+              "9": 843,
+              "10": 2114,
+              "11": 272,
+              "12": 2319,
+              "13": 91,
+              "14": 623,
+              "15": 2968
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(5 - Mod(S5, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 1
+      },
+      {
+        "pair_id": "NEST_016",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_1cc9607580fb",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              431,
+              3569,
+              2299,
+              407
+            ],
+            "s": [
+              3322,
+              1593,
+              2249,
+              2445,
+              3711,
+              1542,
+              397,
+              2600
+            ],
+            "mem": {
+              "0": 2584,
+              "1": 3266,
+              "2": 501,
+              "3": 3474,
+              "4": 1276,
+              "5": 3925,
+              "6": 1922,
+              "7": 3312,
+              "8": 321,
+              "9": 2455,
+              "10": 3895,
+              "11": 2961,
+              "12": 1609,
+              "13": 1361,
+              "14": 1215,
+              "15": 876
+            }
+          },
+          "A_output": {
+            "g": [
+              431,
+              3569,
+              524,
+              0
+            ],
+            "s": [
+              3322,
+              1593,
+              2249,
+              2445,
+              3711,
+              1542,
+              397,
+              2600
+            ],
+            "mem": {
+              "0": 2584,
+              "1": 3266,
+              "2": 501,
+              "3": 3474,
+              "4": 1276,
+              "5": 3925,
+              "6": 1922,
+              "7": 3312,
+              "8": 321,
+              "9": 2455,
+              "10": 3895,
+              "11": 2961,
+              "12": 1609,
+              "13": 1361,
+              "14": 1215,
+              "15": 876
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              431,
+              3569,
+              524,
+              0
+            ],
+            "s": [
+              3322,
+              1593,
+              2249,
+              2445,
+              3711,
+              3216,
+              3307,
+              2600
+            ],
+            "mem": {
+              "0": 2584,
+              "1": 3266,
+              "2": 501,
+              "3": 3474,
+              "4": 1276,
+              "5": 3925,
+              "6": 1922,
+              "7": 3312,
+              "8": 321,
+              "9": 2455,
+              "10": 3895,
+              "11": 2961,
+              "12": 1609,
+              "13": 3307,
+              "14": 1215,
+              "15": 876
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(4092*S0 + S3, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S3*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      },
+      {
+        "pair_id": "NEST_017",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_6952645e1d9d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": false,
+        "is_pure_register": true,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              2666,
+              1144,
+              3658,
+              747
+            ],
+            "s": [
+              3404,
+              1313,
+              880,
+              607,
+              1608,
+              3766,
+              2872,
+              3907
+            ],
+            "mem": {
+              "0": 1788,
+              "1": 1319,
+              "2": 484,
+              "3": 2122,
+              "4": 2114,
+              "5": 3259,
+              "6": 2655,
+              "7": 1345,
+              "8": 3928,
+              "9": 936,
+              "10": 1335,
+              "11": 2073,
+              "12": 1262,
+              "13": 2274,
+              "14": 3922,
+              "15": 130
+            }
+          },
+          "A_output": {
+            "g": [
+              2666,
+              1144,
+              2949,
+              0
+            ],
+            "s": [
+              3404,
+              1313,
+              880,
+              607,
+              1608,
+              3766,
+              2872,
+              3907
+            ],
+            "mem": {
+              "0": 1788,
+              "1": 1319,
+              "2": 484,
+              "3": 2122,
+              "4": 2114,
+              "5": 3259,
+              "6": 2655,
+              "7": 1345,
+              "8": 3928,
+              "9": 936,
+              "10": 1335,
+              "11": 2073,
+              "12": 1262,
+              "13": 2274,
+              "14": 3922,
+              "15": 130
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              2666,
+              1144,
+              2949,
+              0
+            ],
+            "s": [
+              3404,
+              1313,
+              880,
+              607,
+              1608,
+              803,
+              1291,
+              3907
+            ],
+            "mem": {
+              "0": 1788,
+              "1": 1319,
+              "2": 484,
+              "3": 2122,
+              "4": 2114,
+              "5": 3259,
+              "6": 2655,
+              "7": 1345,
+              "8": 3928,
+              "9": 936,
+              "10": 1335,
+              "11": 2073,
+              "12": 1262,
+              "13": 2274,
+              "14": 3922,
+              "15": 130
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R0 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(S0*S4, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      },
+      {
+        "pair_id": "NEST_018",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_f3290a3b9a06",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "has_mem_a": false,
+        "has_mem_b": true,
+        "is_pure_register": false,
+        "a_absorbs_b_unconditional": true,
+        "absorption_trials": 500,
+        "im_b_strict_subset_im_a": true,
+        "b_absorbs_a": false,
+        "strictness_witness": {
+          "input_state": {
+            "g": [
+              970,
+              121,
+              39,
+              1512
+            ],
+            "s": [
+              2187,
+              3377,
+              3749,
+              3965,
+              2666,
+              1719,
+              2625,
+              652
+            ],
+            "mem": {
+              "0": 2495,
+              "1": 1747,
+              "2": 1417,
+              "3": 3524,
+              "4": 2619,
+              "5": 3662,
+              "6": 672,
+              "7": 170,
+              "8": 181,
+              "9": 3666,
+              "10": 90,
+              "11": 1202,
+              "12": 329,
+              "13": 88,
+              "14": 2097,
+              "15": 1643
+            }
+          },
+          "A_output": {
+            "g": [
+              970,
+              121,
+              3972,
+              0
+            ],
+            "s": [
+              2187,
+              3377,
+              3749,
+              3965,
+              2666,
+              1719,
+              2625,
+              652
+            ],
+            "mem": {
+              "0": 2495,
+              "1": 1747,
+              "2": 1417,
+              "3": 3524,
+              "4": 2619,
+              "5": 3662,
+              "6": 672,
+              "7": 170,
+              "8": 181,
+              "9": 3666,
+              "10": 90,
+              "11": 1202,
+              "12": 329,
+              "13": 88,
+              "14": 2097,
+              "15": 1643
+            }
+          },
+          "B_circ_A_output": {
+            "g": [
+              970,
+              121,
+              3972,
+              0
+            ],
+            "s": [
+              2187,
+              3377,
+              3749,
+              3965,
+              2666,
+              3768,
+              197,
+              652
+            ],
+            "mem": {
+              "0": 2495,
+              "1": 1747,
+              "2": 1417,
+              "3": 3524,
+              "4": 2619,
+              "5": 3662,
+              "6": 672,
+              "7": 170,
+              "8": 181,
+              "9": 3666,
+              "10": 90,
+              "11": 1202,
+              "12": 329,
+              "13": 88,
+              "14": 2097,
+              "15": 1643,
+              "42": 1299
+            }
+          }
+        },
+        "fixed_point_eqs_a": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0"
+        ],
+        "fixed_point_eqs_b": [
+          "R2: -R1 - R2 == 0",
+          "R3: -R3 == 0",
+          "S5: Mod(-Mod(S5, 4093) + Mod(31*R1 + 17, 4093), 4093) == 0",
+          "S6: Mod(-Mod(S6, 4093) + Mod(-31*R1 + S3 + 4076, 4093), 4093) == 0"
+        ],
+        "dimension_defect": 2
+      }
+    ],
+    "poset_structure": {
+      "maximal_image_classes": [
+        "CLASS_038",
+        "CLASS_044",
+        "CLASS_048",
+        "CLASS_049",
+        "CLASS_057",
+        "CLASS_073"
+      ],
+      "minimal_image_classes": [
+        "CLASS_036",
+        "CLASS_037",
+        "CLASS_041",
+        "CLASS_052",
+        "CLASS_056",
+        "CLASS_061",
+        "CLASS_063",
+        "CLASS_065",
+        "CLASS_074",
+        "CLASS_078",
+        "CLASS_089",
+        "CLASS_093",
+        "CLASS_095",
+        "CLASS_097",
+        "CLASS_103",
+        "CLASS_104",
+        "CLASS_106",
+        "CLASS_112"
+      ],
+      "poset_edges": [
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_036"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_056"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_063"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_097"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_103"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_104"
+        },
+        {
+          "parent_class": "CLASS_038",
+          "child_class": "CLASS_112"
+        },
+        {
+          "parent_class": "CLASS_044",
+          "child_class": "CLASS_041"
+        },
+        {
+          "parent_class": "CLASS_048",
+          "child_class": "CLASS_078"
+        },
+        {
+          "parent_class": "CLASS_048",
+          "child_class": "CLASS_095"
+        },
+        {
+          "parent_class": "CLASS_049",
+          "child_class": "CLASS_089"
+        },
+        {
+          "parent_class": "CLASS_057",
+          "child_class": "CLASS_061"
+        },
+        {
+          "parent_class": "CLASS_057",
+          "child_class": "CLASS_065"
+        },
+        {
+          "parent_class": "CLASS_073",
+          "child_class": "CLASS_037"
+        },
+        {
+          "parent_class": "CLASS_073",
+          "child_class": "CLASS_052"
+        },
+        {
+          "parent_class": "CLASS_073",
+          "child_class": "CLASS_074"
+        },
+        {
+          "parent_class": "CLASS_073",
+          "child_class": "CLASS_093"
+        },
+        {
+          "parent_class": "CLASS_073",
+          "child_class": "CLASS_106"
+        }
+      ]
+    }
+  },
+  "module3_structural_generalization": {
+    "metadata": {
+      "title": "FNWD Retraction Generalization & Structural Deduction Catalog",
+      "timestamp": "2026-10-11 00:28:44",
+      "total_pairs_evaluated": 100,
+      "true_positives": 18,
+      "true_negatives": 82,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "deductive_accuracy": 1.0,
+      "deductive_precision": 1.0,
+      "deductive_recall": 1.0,
+      "speedup_summary": "Symbolic image variety inclusion decides A o B = B in O(1) symbolic steps without requiring thousands of empirical VM simulation probes."
+    },
+    "predictions": [
+      {
+        "pair_id": "PRED_001",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_a9e0a1e97d3a",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_002",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_f5481fb58eb9",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_003",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_2ef253dad8ec",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_004",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_26e280287fd4",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_005",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_d2289940a224",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_006",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_2cd6eb6cc99a",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_007",
+        "id_a": "DIV_922debb8bdae",
+        "id_b": "DIV_04223bb33a94",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_008",
+        "id_a": "DIV_cba9470fa3c5",
+        "id_b": "DIV_2e48d827cff6",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_009",
+        "id_a": "DIV_bb5de35eb9a0",
+        "id_b": "DIV_8169557b00f2",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_010",
+        "id_a": "DIV_bb5de35eb9a0",
+        "id_b": "DIV_e2a7acf4a958",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_011",
+        "id_a": "DIV_3934f50870fd",
+        "id_b": "DIV_ff249d0e7482",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_012",
+        "id_a": "DIV_b7f7f08d49c5",
+        "id_b": "DIV_ef5e62b1b9c0",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_013",
+        "id_a": "DIV_b7f7f08d49c5",
+        "id_b": "DIV_9a040e99c6aa",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_014",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_3e6f0da64d2b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_015",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_1c7644d72b33",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_016",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_1cc9607580fb",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_017",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_6952645e1d9d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_018",
+        "id_a": "DIV_9bc9e2ca0058",
+        "id_b": "DIV_f3290a3b9a06",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": true,
+        "empirical_absorption_verified": true,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "All image constraints of A are identically satisfied by the outputs of B."
+      },
+      {
+        "pair_id": "PRED_019",
+        "id_a": "DIV_8d926431e7bb",
+        "id_b": "IDENT_LAW_068_B_2d68fb4c48e3",
+        "pool_a": "DIVERSE",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1*(1 - Mod(S0, 4093)) != 0"
+      },
+      {
+        "pair_id": "PRED_020",
+        "id_a": "IDENT_LAW_026_B_a8dde782f934",
+        "id_b": "DIV_59a3a9c95904",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R0: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_021",
+        "id_a": "DIV_8ffca7c3ede8",
+        "id_b": "DIV_6b08f937d6f7",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_022",
+        "id_a": "DIV_73de665119b4",
+        "id_b": "DIV_0e9a53f84344",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_023",
+        "id_a": "DIV_59a3a9c95904",
+        "id_b": "IDENT_LAW_067_B_e39c3f604dd3",
+        "pool_a": "DIVERSE",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R1 - 2*R3 != 0"
+      },
+      {
+        "pair_id": "PRED_024",
+        "id_a": "DIV_9c15997ea097",
+        "id_b": "DIV_59a3a9c95904",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_025",
+        "id_a": "DIV_4f6837e34613",
+        "id_b": "DIV_7ee61be7fb8d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 - R1 != 0"
+      },
+      {
+        "pair_id": "PRED_026",
+        "id_a": "IDENT_LAW_060_B_04aaacced485",
+        "id_b": "DIV_d0602a7df45c",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_027",
+        "id_a": "DIV_432985be8d17",
+        "id_b": "IDENT_LAW_029_A_b1b59f1dfc5b",
+        "pool_a": "DIVERSE",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 2*R1 - R2 != 0"
+      },
+      {
+        "pair_id": "PRED_028",
+        "id_a": "IDENT_LAW_026_B_a8dde782f934",
+        "id_b": "IDENT_LAW_060_B_04aaacced485",
+        "pool_a": "IDENT",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R0: -R0 - R2 != 0"
+      },
+      {
+        "pair_id": "PRED_029",
+        "id_a": "DIV_c9a5f2ecc8a3",
+        "id_b": "DIV_36a3a64b285b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_030",
+        "id_a": "DIV_8dff81a43a4c",
+        "id_b": "DIV_1842210a6cf1",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 - R1 != 0"
+      },
+      {
+        "pair_id": "PRED_031",
+        "id_a": "IDENT_LAW_026_B_a8dde782f934",
+        "id_b": "DIV_4d03b91d5e1b",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R0: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_032",
+        "id_a": "DIV_9248f3e54333",
+        "id_b": "DIV_b5b57a08c223",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates S-register constraint of A on S0: Mod(Mod(4092*S0 + 92, 4093), 4093) != 0"
+      },
+      {
+        "pair_id": "PRED_033",
+        "id_a": "DIV_189882ae0d24",
+        "id_b": "DIV_ff249d0e7482",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: -2*R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_034",
+        "id_a": "DIV_7ee61be7fb8d",
+        "id_b": "DIV_ff5b6d711d43",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_035",
+        "id_a": "DIV_73de665119b4",
+        "id_b": "DIV_b7f7f08d49c5",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_036",
+        "id_a": "DIV_d0602a7df45c",
+        "id_b": "DIV_8ffca7c3ede8",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -3*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_037",
+        "id_a": "DIV_d2289940a224",
+        "id_b": "DIV_d527cc56062a",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 - R1 != 0"
+      },
+      {
+        "pair_id": "PRED_038",
+        "id_a": "IDENT_LAW_023_B_5f047b7ac1fa",
+        "id_b": "DIV_26e280287fd4",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: R1*(Mod(31*R0 - 31*R1 + 17, 4093) - 1) != 0"
+      },
+      {
+        "pair_id": "PRED_039",
+        "id_a": "DIV_d2289940a224",
+        "id_b": "DIV_f478c12a925c",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -2*R1*Mod(S2, 4093) + R1 - R3 != 0"
+      },
+      {
+        "pair_id": "PRED_040",
+        "id_a": "DIV_ff249d0e7482",
+        "id_b": "DIV_432985be8d17",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -3*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_041",
+        "id_a": "DIV_aa3896246624",
+        "id_b": "DIV_8ffca7c3ede8",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -3*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_042",
+        "id_a": "DIV_9c24e1bf3785",
+        "id_b": "DIV_c9a5f2ecc8a3",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1 != 0"
+      },
+      {
+        "pair_id": "PRED_043",
+        "id_a": "DIV_26e280287fd4",
+        "id_b": "DIV_aa3896246624",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_044",
+        "id_a": "IDENT_LAW_067_B_e39c3f604dd3",
+        "id_b": "IDENT_LAW_060_B_04aaacced485",
+        "pool_a": "IDENT",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R2 != 0"
+      },
+      {
+        "pair_id": "PRED_045",
+        "id_a": "DIV_bb5de35eb9a0",
+        "id_b": "IDENT_LAW_065_B_c5d46081d94b",
+        "pool_a": "DIVERSE",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R1 - R2 != 0"
+      },
+      {
+        "pair_id": "PRED_046",
+        "id_a": "DIV_3326beb25333",
+        "id_b": "DIV_2d1bc085a8ff",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_047",
+        "id_a": "DIV_cba9470fa3c5",
+        "id_b": "DIV_1842210a6cf1",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates S-register constraint of A on S5: Mod(Mod(31*R1 + 4092*S5 + 17, 4093), 4093) != 0"
+      },
+      {
+        "pair_id": "PRED_048",
+        "id_a": "DIV_cf33b5685120",
+        "id_b": "DIV_d2289940a224",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_049",
+        "id_a": "IDENT_LAW_035_B_cefdc86c3c5d",
+        "id_b": "DIV_6952645e1d9d",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R0: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_050",
+        "id_a": "DIV_66e767624385",
+        "id_b": "DIV_5987382c41fd",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_051",
+        "id_a": "IDENT_LAW_070_B_c78fce873c17",
+        "id_b": "DIV_bb5de35eb9a0",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1 != 0"
+      },
+      {
+        "pair_id": "PRED_052",
+        "id_a": "IDENT_LAW_059_A_43e9781d442b",
+        "id_b": "DIV_414d69dbb422",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: R1*(1 - Mod(M0(Mod(S3, 64)), 4093)) != 0"
+      },
+      {
+        "pair_id": "PRED_053",
+        "id_a": "DIV_3e6f0da64d2b",
+        "id_b": "DIV_f3290a3b9a06",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_054",
+        "id_a": "DIV_ba3eb9b2fb7c",
+        "id_b": "DIV_26c2925383a0",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1*(1 - Mod(S4, 4093)) != 0"
+      },
+      {
+        "pair_id": "PRED_055",
+        "id_a": "DIV_219c861c8ab7",
+        "id_b": "DIV_312c65c1319f",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_056",
+        "id_a": "DIV_cdb11276274f",
+        "id_b": "DIV_9bc9e2ca0058",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_057",
+        "id_a": "DIV_85a74a512857",
+        "id_b": "DIV_7984885c9766",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: R0 - R1 != 0"
+      },
+      {
+        "pair_id": "PRED_058",
+        "id_a": "IDENT_LAW_056_A_48d8b29115d1",
+        "id_b": "IDENT_LAW_035_B_cefdc86c3c5d",
+        "pool_a": "IDENT",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_059",
+        "id_a": "DIV_d12fcb4ef0dc",
+        "id_b": "DIV_36a3a64b285b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_060",
+        "id_a": "DIV_c7a142464358",
+        "id_b": "DIV_3e6f0da64d2b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1*(Mod(S4, 4093) + 2) != 0"
+      },
+      {
+        "pair_id": "PRED_061",
+        "id_a": "IDENT_LAW_059_A_43e9781d442b",
+        "id_b": "DIV_eeab84714b1d",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: -18*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_062",
+        "id_a": "DIV_36a3a64b285b",
+        "id_b": "DIV_312c65c1319f",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 - R1 != 0"
+      },
+      {
+        "pair_id": "PRED_063",
+        "id_a": "IDENT_LAW_065_B_c5d46081d94b",
+        "id_b": "DIV_bb5de35eb9a0",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R0: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_064",
+        "id_a": "DIV_8ffca7c3ede8",
+        "id_b": "DIV_66e767624385",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R3: -5*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_065",
+        "id_a": "DIV_8d926431e7bb",
+        "id_b": "DIV_f3290a3b9a06",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_066",
+        "id_a": "DIV_cdb11276274f",
+        "id_b": "DIV_f478c12a925c",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_067",
+        "id_a": "DIV_1adee2921d57",
+        "id_b": "DIV_3326beb25333",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0*Mod(S3, 4093) + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_068",
+        "id_a": "DIV_460ca35e4dbb",
+        "id_b": "DIV_1906a4fffcf3",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_069",
+        "id_a": "DIV_ef935c5625d2",
+        "id_b": "DIV_ff249d0e7482",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 4*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_070",
+        "id_a": "DIV_6b8602e88624",
+        "id_b": "DIV_2b0e0a60f8e2",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_071",
+        "id_a": "IDENT_LAW_058_B_0903c20fe87c",
+        "id_b": "DIV_1842210a6cf1",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_072",
+        "id_a": "DIV_8d926431e7bb",
+        "id_b": "DIV_3808ee1a1890",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -2*R0 != 0"
+      },
+      {
+        "pair_id": "PRED_073",
+        "id_a": "DIV_5987382c41fd",
+        "id_b": "DIV_6952645e1d9d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_074",
+        "id_a": "DIV_6b08f937d6f7",
+        "id_b": "DIV_f478c12a925c",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1 + R3 != 0"
+      },
+      {
+        "pair_id": "PRED_075",
+        "id_a": "DIV_0b5abd9c4e20",
+        "id_b": "DIV_bb5de35eb9a0",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates S-register constraint of A on S5: Mod(Mod(4092*S5 + 1, 4093), 4093) != 0"
+      },
+      {
+        "pair_id": "PRED_076",
+        "id_a": "DIV_ef935c5625d2",
+        "id_b": "DIV_8d926431e7bb",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_077",
+        "id_a": "DIV_ac81214812ef",
+        "id_b": "DIV_4d03b91d5e1b",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1*(Mod(S4, 4093) + 2) != 0"
+      },
+      {
+        "pair_id": "PRED_078",
+        "id_a": "DIV_73de665119b4",
+        "id_b": "DIV_6b8602e88624",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_079",
+        "id_a": "DIV_2e48d827cff6",
+        "id_b": "DIV_29fb47ab59f5",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: 3*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_080",
+        "id_a": "DIV_c7a142464358",
+        "id_b": "DIV_dd6709c395cd",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1*(Mod(S4, 4093)) != 0"
+      },
+      {
+        "pair_id": "PRED_081",
+        "id_a": "IDENT_LAW_055_B_7e0dafd64333",
+        "id_b": "DIV_36a3a64b285b",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_082",
+        "id_a": "DIV_751fdb928c69",
+        "id_b": "IDENT_LAW_029_A_b1b59f1dfc5b",
+        "pool_a": "DIVERSE",
+        "pool_b": "IDENT",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 + R1 - R2 != 0"
+      },
+      {
+        "pair_id": "PRED_083",
+        "id_a": "DIV_d2289940a224",
+        "id_b": "DIV_8a23d7c43a3d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_084",
+        "id_a": "DIV_b6cee31952bc",
+        "id_b": "DIV_ef935c5625d2",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R1 != 0"
+      },
+      {
+        "pair_id": "PRED_085",
+        "id_a": "IDENT_LAW_056_A_48d8b29115d1",
+        "id_b": "DIV_c9a5f2ecc8a3",
+        "pool_a": "IDENT",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_086",
+        "id_a": "DIV_79c026c4bec2",
+        "id_b": "DIV_04223bb33a94",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_087",
+        "id_a": "DIV_b5b57a08c223",
+        "id_b": "DIV_8a23d7c43a3d",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_088",
+        "id_a": "DIV_c9a5f2ecc8a3",
+        "id_b": "DIV_189882ae0d24",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_089",
+        "id_a": "DIV_2ef253dad8ec",
+        "id_b": "DIV_30964b374606",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0 - R1*Mod(S3, 4093) + R1 != 0"
+      },
+      {
+        "pair_id": "PRED_090",
+        "id_a": "DIV_219c861c8ab7",
+        "id_b": "DIV_2b0e0a60f8e2",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1 != 0"
+      },
+      {
+        "pair_id": "PRED_091",
+        "id_a": "DIV_66e767624385",
+        "id_b": "DIV_1229d6897307",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_092",
+        "id_a": "DIV_cf33b5685120",
+        "id_b": "DIV_0e9a53f84344",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_093",
+        "id_a": "DIV_6b08f937d6f7",
+        "id_b": "DIV_e2a7acf4a958",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R0 + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_094",
+        "id_a": "DIV_4d03b91d5e1b",
+        "id_b": "DIV_5987382c41fd",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R1 != 0"
+      },
+      {
+        "pair_id": "PRED_095",
+        "id_a": "DIV_cf33b5685120",
+        "id_b": "DIV_e2a7acf4a958",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_096",
+        "id_a": "DIV_1cc9607580fb",
+        "id_b": "DIV_432985be8d17",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_097",
+        "id_a": "DIV_4f6837e34613",
+        "id_b": "DIV_1cc9607580fb",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: R1 != 0"
+      },
+      {
+        "pair_id": "PRED_098",
+        "id_a": "DIV_b6cee31952bc",
+        "id_b": "DIV_cdb11276274f",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Im(B) violates G-register constraint of A on R2: -R0*Mod(S3, 4093) + 2*R1 != 0"
+      },
+      {
+        "pair_id": "PRED_099",
+        "id_a": "DIV_73de665119b4",
+        "id_b": "DIV_0e9a53f84344",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      },
+      {
+        "pair_id": "PRED_100",
+        "id_a": "DIV_9a040e99c6aa",
+        "id_b": "DIV_2ef253dad8ec",
+        "pool_a": "DIVERSE",
+        "pool_b": "DIVERSE",
+        "predicted_absorption": false,
+        "empirical_absorption_verified": false,
+        "prediction_correct": true,
+        "vm_probes_tested": 200,
+        "containment_reason": "Transformation A performs OP_MEM_STORE, preventing unconstrained full-state absorption."
+      }
+    ]
+  },
+  "module4_accounting_and_novelty_reconciliation": {
+    "metadata": {
+      "title": "FNWD Retraction Accounting & Semigroup Theory Transfer Reconciliation",
+      "timestamp": "2026-10-11 00:28:55"
+    },
+    "candidate_accounting_reconciliation": {
+      "pool_ident": {
+        "total_candidates": 41,
+        "sampled_in_benchmark": 41,
+        "sampling_coverage_pct": 100.0,
+        "participating_in_verified_discoveries": 29,
+        "discovery_participation_pct": 70.7,
+        "accounting_clarification": "100% of candidate pool was actively drawn across benchmark trials; 29 candidates generated certified discovery relations."
+      },
+      "pool_diverse": {
+        "total_candidates": 193,
+        "sampled_in_benchmark": 193,
+        "sampling_coverage_pct": 100.0,
+        "participating_in_verified_discoveries": 60,
+        "discovery_participation_pct": 31.1,
+        "accounting_clarification": "100% of candidate pool was actively drawn across benchmark trials; 60 candidates generated certified discovery relations."
+      }
+    },
+    "epistemic_verification_boundary": {
+      "historical_theorems_total": 56,
+      "replayed_relations_total": 99,
+      "symbolically_proven_universal": 52,
+      "empirically_replay_validated": 47,
+      "classification_rule": "Symbolic verification via Sympy quantifier elimination certifies universal validity; empirical replay across 500 unconstrained states certifies empirical validity."
+    },
+    "algebraic_novelty_classification": {
+      "historical_focus": "Pairwise commutation [A, B] = 0 across canonical states.",
+      "new_structural_regime": "Transformation semigroup theory: projection preorders, quotient posets (P, <=), and image containment deductions.",
+      "certified_quotient_classes": 115,
+      "certified_strict_nested_pairs": 18,
+      "pure_register_strict_nested_pairs": 8,
+      "deductive_generalization_accuracy": 1.0
+    }
+  }
+}

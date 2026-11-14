@@ -1,0 +1,32 @@
+{
+  "title": "Autonomous Discovery of Idempotent State-Space Retractions and Conditional Commutation Manifolds (FNWD v0.4)",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-15",
+  "creators": [
+    {
+      "name": "Luecke, Kyle W.",
+      "affiliation": "Driftbound Labs",
+      "orcid": "0009-0008-0202-7852"
+    }
+  ],
+  "description": "Autonomous discovery and six-gate verification of enabler-optimizer compositions pairing idempotent state-space retractions with conditional commutators across modular affine register automata, CRDT Observed-Remove sets, and transactional key-value DSW search trees, together with the 115-class quotient Projection Poset over F_4093.",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "idempotent retraction",
+    "conditional commutativity",
+    "linearizability",
+    "projection poset",
+    "concurrent data structures",
+    "CRDT",
+    "Driftbound Labs"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/k-luecke/fnwd-v04-retraction",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

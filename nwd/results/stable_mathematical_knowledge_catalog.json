@@ -1,0 +1,3812 @@
+{
+  "catalog_metadata": {
+    "title": "FNWD Stable Mathematical Knowledge Catalog: Certified Conditional Commutators",
+    "version": "2.1-sound-reconciled",
+    "timestamp": "2026-10-10 19:03:18",
+    "modulus": 4093,
+    "total_certified_theorems": 56,
+    "reconciled_census": {
+      "certified_universal_exact": 42,
+      "certified_context_constrained_exact": 14,
+      "common_invariant_manifolds": 38,
+      "semi_invariant_domains": 16,
+      "non_preserving_commutation_domains": 2,
+      "contract_b_compliant": 1,
+      "contract_a_permissive_only": 55
+    },
+    "discrepancy_resolution_note": "Reconciliation of the 38 vs 42 Discrepancy: Exactly 38 pairs form genuine Common Invariant Manifolds. The earlier JSON summary of 42 resulted from an overly permissive check that substituted (R2=0, R3=0) rather than evaluating each pair's certified manifold condition. The 4 affected pairs that commute on their manifold but escape under action are: LAW_027 (escapes on A), LAW_040 (escapes on B), LAW_048 (escapes on A), and LAW_051 (escapes on B)."
+  },
+  "theorems": [
+    {
+      "theorem_id": "THM_LAW_023",
+      "pair_id": "LAW_023",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_2(3,3,2)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,0)"
+      ],
+      "instructions_b": [
+        "OP_6(0,6,2)",
+        "OP_5(5,6,1)",
+        "OP_3(3,1,6)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1*(Mod(S6, 4093))"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1*(Mod(S6, 4093))"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1*(Mod(S6, 4093)) - R2"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_024",
+      "pair_id": "LAW_024",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_2(3,3,2)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,0)"
+      ],
+      "instructions_b": [
+        "OP_4(2,0,0)",
+        "OP_1(2,2,0)",
+        "OP_5(0,4,5)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "-R2 + R3"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_025",
+      "pair_id": "LAW_025",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S3",
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_2(3,3,2)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,0)"
+      ],
+      "instructions_b": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-2*R2"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_026",
+      "pair_id": "LAW_026",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(2,3,0)",
+        "OP_11(0,7,1)",
+        "OP_10(1,7,0)"
+      ],
+      "instructions_b": [
+        "OP_6(3,7,6)",
+        "OP_4(0,0,0)",
+        "OP_4(0,2,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "-R3",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R3",
+        "R1": "R1",
+        "R2": "-R3",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "-R3",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "R2 + R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_2 + R_3 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 + R3 = 0 (mod 4093)",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R2 + R3 = 0 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_027",
+      "pair_id": "LAW_027",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(2,3,0)",
+        "OP_11(0,7,1)",
+        "OP_10(1,7,0)"
+      ],
+      "instructions_b": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "-R3",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ab": {
+        "R0": "-R3*M0(Mod(S7, 64))",
+        "R1": "R1",
+        "R2": "-R3",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "coordinate_defects": {
+        "R0": "-R2*Mod(S0, 4093) - R3*M0(Mod(S7, 64))",
+        "R2": "-R2 - R3",
+        "R3": "R2 + R3",
+        "S6": "-Mod(S0 + S4, 4093) + Mod(S4 + M0(Mod(S7, 64)), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S0",
+        "S4",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 + R_3 \\equiv 0 \\pmod{4093} \\land S_0 \\equiv M_0(S_7 \\pmod{64}) \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 + R3 == 0 and S0 == M0(S7 % 64)",
+      "exact_zero_set_derivation": "Defects D_R2 = -(R2+R3), D_R3 = R2+R3, D_S6 = -S0 + M0(S7 mod 64). Vanishes iff R2+R3=0 and S0=M0(S7 mod 64).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_028",
+      "pair_id": "LAW_028",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S1",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_6(1,4,1)",
+        "OP_4(0,1,0)",
+        "OP_2(3,1,2)"
+      ],
+      "instructions_b": [
+        "OP_4(2,0,0)",
+        "OP_1(2,2,0)",
+        "OP_5(0,4,5)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1 - R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "-R1",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R1 - R2"
+      },
+      "composition_ba": {
+        "R0": "-R1",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R1"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_029",
+      "pair_id": "LAW_029",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S2",
+        "OP_6: Blocked write to protected S4"
+      ],
+      "instructions_a": [
+        "OP_5(5,3,3)",
+        "OP_10(3,0,0)",
+        "OP_2(3,0,2)"
+      ],
+      "instructions_b": [
+        "OP_11(2,5,1)",
+        "OP_6(4,0,4)",
+        "OP_3(2,1,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R0 - R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(2*(Mod((Mod(S3, 4093))**2, 32)))",
+        "R3": "R0 - R2"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R0 - R1*M0(Mod(S5, 64))"
+      },
+      "coordinate_defects": {
+        "R2": "R1*(-M0(Mod(S5, 64)) + M0(2*(Mod((Mod(S3, 4093))**2, 32))))",
+        "R3": "R1*M0(Mod(S5, 64)) - R2",
+        "S2": "-M0(Mod(S5, 64)) + M0(2*(Mod((Mod(S3, 4093))**2, 32)))"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S3",
+        "S5"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "M_0(2 S_3 \\pmod{64}) = M_0(S_5 \\pmod{64}) \\land R_2 \\equiv R_1 M_0(S_5 \\pmod{64}) \\pmod{4093}",
+      "exact_zero_set_ascii": "M0(2*S3 % 64) == M0(S5 % 64) and R2 == R1 * M0(S5 % 64)",
+      "exact_zero_set_derivation": "Defects D_S2 = M0(2*S3 mod 64) - M0(S5 mod 64), D_R3 = R1*M0(S5 mod 64) - R2. In clean memory (M0=0), requires R2=0.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_030",
+      "pair_id": "LAW_030",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_7(5,7,4)",
+        "OP_3(3,2,7)",
+        "OP_5(6,0,6)"
+      ],
+      "instructions_b": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(S7, 4093))"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(S7, 4093))"
+      },
+      "coordinate_defects": {
+        "R3": "R2*(-Mod(S7, 4093) - 1)",
+        "S6": "Mod(S0 + S4, 4093) - Mod(2*S0 + S4, 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S0",
+        "S4",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "S_0 = 0 \\land (R_2 \\equiv 0 \\lor S_7 \\equiv 4092 \\pmod{4093})",
+      "exact_zero_set_ascii": "S0 == 0 and (R2 == 0 or S7 == 4092)",
+      "exact_zero_set_derivation": "Defect is D_R3 = -R2*(S7 + 1) and D_S6 = -S0. D_S6=0 requires S0=0. Under S0=0, D_R3=0 requires R2=0 or S7=-1=4092 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_031",
+      "pair_id": "LAW_031",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S2",
+        "OP_6: Blocked write to protected S4",
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_11(2,5,1)",
+        "OP_6(4,0,4)",
+        "OP_3(2,1,2)"
+      ],
+      "instructions_b": [
+        "OP_6(3,7,6)",
+        "OP_4(0,0,0)",
+        "OP_4(0,2,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "-R1*M0(Mod(S5, 64))",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "-R1*M0(Mod(S5, 64)) + R2"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S5"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "M_0 \\equiv 0 \\land R_2 \\equiv 0",
+      "exact_zero_set_ascii": "M_0 \\equiv 0 and R2 = 0",
+      "exact_zero_set_derivation": "Context-constrained manifold requiring specific initial register/memory values.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_032",
+      "pair_id": "LAW_032",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S2",
+        "OP_6: Blocked write to protected S4",
+        "OP_2: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_11(2,5,1)",
+        "OP_6(4,0,4)",
+        "OP_3(2,1,2)"
+      ],
+      "instructions_b": [
+        "OP_11(0,1,7)",
+        "OP_2(0,2,0)",
+        "OP_3(2,1,6)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "-R0 + R1*M0(Mod(S5, 64))",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "R1*M0(Mod(S5, 64)) - R2",
+        "R2": "R1*(-M0(Mod(S5, 64)) + Mod(S6, 4093))",
+        "S4": "Mod(S0 + 4092*S4, 4093) - Mod(4092*S4 + M0(Mod(S1, 64)), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S0",
+        "S1",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "S_0 = M_0(S_1 \\pmod{64}) \\land R_2 \\equiv R_1 M_0(S_5 \\pmod{64}) \\land (R_1 = 0 \\lor S_6 = M_0(S_5 \\pmod{64}))",
+      "exact_zero_set_ascii": "S0 == M0(S1 % 64) and R2 == R1*M0(S5 % 64) and (R1 == 0 or S6 == M0(S5 % 64))",
+      "exact_zero_set_derivation": "Defects D_S4 = S0 - M0(S1 mod 64), D_R0 = R1*M0(S5 mod 64) - R2, D_R2 = R1*(S6 - M0(S5 mod 64)).",
+      "manifold_preservation": {
+        "preservation_category": "NON_PRESERVING_COMMUTATION_DOMAIN",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_033",
+      "pair_id": "LAW_033",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S2",
+        "OP_6: Blocked write to protected S4",
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_11(2,5,1)",
+        "OP_6(4,0,4)",
+        "OP_3(2,1,2)"
+      ],
+      "instructions_b": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R1*M0(Mod(S5, 64))*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R1*M0(Mod(S5, 64))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R1*M0(Mod(S5, 64))*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "(R1*M0(Mod(S5, 64)) - R2)*(Mod(S3, 4093))",
+        "R2": "R1*(1 - Mod(S3, 4093))*M0(Mod(S5, 64))"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S3",
+        "S5"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "M_0(S_5 \\pmod{64}) = 0 \\land (S_3 \\equiv 0 \\lor R_2 \\equiv 0 \\pmod{4093})",
+      "exact_zero_set_ascii": "M0(S5 % 64) == 0 and (S3 == 0 or R2 == 0)",
+      "exact_zero_set_derivation": "Defect D_R2 = R1*(1-S3)*M0(S5 mod 64), D_R0 = S3*(R1*M0 - R2). Under clean memory, factors into S3=0 or R2=0.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_034",
+      "pair_id": "LAW_034",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(2,0,0)",
+        "OP_1(2,2,0)",
+        "OP_5(0,4,5)"
+      ],
+      "instructions_b": [
+        "OP_6(3,7,6)",
+        "OP_4(0,0,0)",
+        "OP_4(0,2,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_035",
+      "pair_id": "LAW_035",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(2,0,0)",
+        "OP_1(2,2,0)",
+        "OP_5(0,4,5)"
+      ],
+      "instructions_b": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R0": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_036",
+      "pair_id": "LAW_036",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_4(2,0,0)",
+        "OP_1(2,2,0)",
+        "OP_5(0,4,5)"
+      ],
+      "instructions_b": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "0",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "-R2*Mod(S3, 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{2} \\equiv 0 \\lor S_{3} \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_037",
+      "pair_id": "LAW_037",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_6(3,7,6)",
+        "OP_4(0,0,0)",
+        "OP_4(0,2,0)"
+      ],
+      "instructions_b": [
+        "OP_11(0,1,7)",
+        "OP_2(0,2,0)",
+        "OP_3(2,1,6)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R1*Mod(S6, 4093)",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "R1*(Mod(S6, 4093)) + 2*R2"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S6"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 2046 R_1 S_6 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 2046 * R1 * S6",
+      "exact_zero_set_derivation": "Defect D_R0 = R1*S6 + 2*R2. In Z_4093, 2*R2 = -R1*S6 iff R2 = -2^(-1)*R1*S6 = 2046*R1*S6.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_038",
+      "pair_id": "LAW_038",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0",
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_6(3,7,6)",
+        "OP_4(0,0,0)",
+        "OP_4(0,2,0)"
+      ],
+      "instructions_b": [
+        "OP_3(0,1,7)",
+        "OP_7(7,0,3)",
+        "OP_7(6,6,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R1*(Mod(S7, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R1*(Mod(S7, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "R1*(Mod(S7, 4093)) + R2",
+        "S3": "Mod(4092*S6 + S7, 4093) - Mod(S0*S3 + 4092*S1*S6, 4093)",
+        "S7": "-Mod(S0*S3, 4093) + Mod(S0*(4092*S6 + S7), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S0",
+        "S1",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "S_0 = 0 \\land R_2 \\equiv 0",
+      "exact_zero_set_ascii": "S_0 = 0 and R2 = 0",
+      "exact_zero_set_derivation": "Context-constrained manifold requiring specific initial register/memory values.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": false,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_039",
+      "pair_id": "LAW_039",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "instructions_b": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "coordinate_defects": {
+        "R0": "R2*(-Mod(S0, 4093) - 1)",
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S0"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_040",
+      "pair_id": "LAW_040",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "instructions_b": [
+        "OP_1(0,0,0)",
+        "OP_5(7,4,2)",
+        "OP_3(2,3,3)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R0",
+        "R1": "R1",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "-R2*Mod(S3, 4093)",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "R3*(Mod(S0, 4093))*(Mod(S3, 4093))",
+        "R1": "R1",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "-R3*Mod(S3, 4093)"
+      },
+      "coordinate_defects": {
+        "R0": "(2*R2 - R3*Mod(S3, 4093))*(Mod(S0, 4093))",
+        "R2": "(-R2 - R3)*(Mod(S3, 4093))",
+        "R3": "-R2 + R3*(Mod(S3, 4093))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S0",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "S_{3} \\equiv 0 \\lor R_{2} + R_{3} \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_041",
+      "pair_id": "LAW_041",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "instructions_b": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "coordinate_defects": {
+        "R0": "R2*(-Mod(S0, 4093) + Mod(S3, 4093))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S0",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{2} \\equiv 0 \\lor S_{0} - S_{3} \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_042",
+      "pair_id": "LAW_042",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_5: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_4(3,2,0)",
+        "OP_3(0,2,0)",
+        "OP_5(6,4,0)"
+      ],
+      "instructions_b": [
+        "OP_1(1,1,3)",
+        "OP_8(7,72,0)",
+        "OP_5(2,4,5)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1 + R3",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1 - R2",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S0, 4093))",
+        "R1": "R1 + R3",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "coordinate_defects": {
+        "R1": "-R2 - R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_2 + R_3 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 + R3 = 0 (mod 4093)",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R2 + R3 = 0 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_043",
+      "pair_id": "LAW_043",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_4: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "instructions_b": [
+        "OP_11(0,1,7)",
+        "OP_2(0,2,0)",
+        "OP_3(2,1,6)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "-R1*Mod(S6, 4093)",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R0": "R1*(Mod(S6, 4093)) + 2*R2"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S6"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 2046 R_1 S_6 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 2046 * R1 * S6",
+      "exact_zero_set_derivation": "Defect D_R0 = R1*S6 + 2*R2. In Z_4093, 2*R2 = -R1*S6 iff R2 = -2^(-1)*R1*S6 = 2046*R1*S6.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_044",
+      "pair_id": "LAW_044",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_4: Blocked write to protected R0",
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "instructions_b": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R0": "R2*(Mod(S3, 4093) + 1)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{2} \\equiv 0 \\lor S_{3} + 1 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_045",
+      "pair_id": "LAW_045",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "instructions_b": [
+        "OP_1(3,0,3)",
+        "OP_8(6,85,0)",
+        "OP_10(1,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R0 + R3"
+      },
+      "composition_ab": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_046",
+      "pair_id": "LAW_046",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_4: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3",
+        "OP_7: Blocked write to protected S4"
+      ],
+      "instructions_a": [
+        "OP_5(7,2,5)",
+        "OP_4(0,2,0)",
+        "OP_2(3,0,0)"
+      ],
+      "instructions_b": [
+        "OP_1(3,0,3)",
+        "OP_8(3,101,0)",
+        "OP_7(4,6,5)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R0 + R3"
+      },
+      "composition_ab": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_047",
+      "pair_id": "LAW_047",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_1: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_1(0,0,0)",
+        "OP_5(7,4,2)",
+        "OP_3(2,3,3)"
+      ],
+      "instructions_b": [
+        "OP_11(0,1,7)",
+        "OP_2(0,2,0)",
+        "OP_3(2,1,6)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R0",
+        "R1": "R1",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "-2*R0 + R3*(Mod(S3, 4093))",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-2*R0 + 2*R2",
+        "R1": "R1",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "-2*R2 + R3*(Mod(S3, 4093))",
+        "R2": "R1*(Mod(S6, 4093)) - R3*Mod(S3, 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "R3",
+        "S3",
+        "S6"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_3 S_3 \\equiv R_1 S_6 \\equiv 2 R_2 \\pmod{4093}",
+      "exact_zero_set_ascii": "R3*S3 == R1*S6 == 2*R2",
+      "exact_zero_set_derivation": "Defects D_R0 = -2*R2 + R3*S3, D_R2 = R1*S6 - R3*S3.",
+      "manifold_preservation": {
+        "preservation_category": "NON_PRESERVING_COMMUTATION_DOMAIN",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_048",
+      "pair_id": "LAW_048",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_1: Blocked write to protected R0",
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_1(0,0,0)",
+        "OP_5(7,4,2)",
+        "OP_3(2,3,3)"
+      ],
+      "instructions_b": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R0",
+        "R1": "R1",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R3*(Mod(S3, 4093))**2",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R3*(Mod(S3, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "2*R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "73*R3",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "(-2*R2 + R3*(Mod(S3, 4093)))*(Mod(S3, 4093))",
+        "R2": "R3*(Mod(S3, 4093) - 73)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{3} \\equiv 0 \\lor S_{3} - 73 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_049",
+      "pair_id": "LAW_049",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_11(0,1,7)",
+        "OP_2(0,2,0)",
+        "OP_3(2,1,6)"
+      ],
+      "instructions_b": [
+        "OP_3(0,1,7)",
+        "OP_7(7,0,3)",
+        "OP_7(6,6,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R0 + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R1*(Mod(S7, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R1*(Mod(S7, 4093))",
+        "R1": "R1",
+        "R2": "R1*(Mod(S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R1*Mod(S7, 4093) + R2",
+        "R1": "R1",
+        "R2": "R1*(Mod(S1*S6, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R1*(Mod(S7, 4093)) - R2",
+        "R2": "R1*(Mod(S6, 4093) - Mod(S1*S6, 4093))",
+        "S7": "-Mod(S0*S3, 4093) + Mod(M0(Mod(S1, 64))*(Mod(S3, 4093)), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S0",
+        "S1",
+        "S3",
+        "S6",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 2 R_1 S_7 \\land (S_3 = 0 \\lor S_0 = M_0(S_1 \\pmod{64})) \\land (R_1 = 0 \\lor S_6 = 0 \\lor S_1 = 1)",
+      "exact_zero_set_ascii": "R2 == 2*R1*S7 and (S3 == 0 or S0 == M0(S1 % 64)) and (R1 == 0 or S6 == 0 or S1 == 1)",
+      "exact_zero_set_derivation": "Defects D_R0 = 2*R1*S7 - R2, D_R2 = R1*S6*(1-S1), D_S7 = S3*(M0 - S0).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_050",
+      "pair_id": "LAW_050",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3",
+        "OP_3: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "instructions_b": [
+        "OP_3(0,1,7)",
+        "OP_7(7,0,3)",
+        "OP_7(6,6,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R1*(Mod(S7, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R1*(Mod(S3, 4093))*(Mod(S7, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "(R1*(Mod(S7, 4093)) - R2)*(Mod(S3, 4093))",
+        "S7": "73*(Mod(S0, 4093)) - Mod(S0*S3, 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S0",
+        "S3",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "(S_0 = 0 \\lor S_3 \\equiv 73) \\land (S_3 \\equiv 0 \\lor R_2 \\equiv R_1 S_7 \\pmod{4093})",
+      "exact_zero_set_ascii": "(S0 == 0 or S3 == 73) and (S3 == 0 or R2 == R1*S7)",
+      "exact_zero_set_derivation": "Defects D_S7 = S0*(73 - S3), D_R0 = S3*(R1*S7 - R2).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": false,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_051",
+      "pair_id": "LAW_051",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_3: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S3",
+        "OP_5: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_3(0,2,3)",
+        "OP_3(1,1,3)",
+        "OP_8(3,73,0)"
+      ],
+      "instructions_b": [
+        "OP_5(2,5,1)",
+        "OP_2(2,3,2)",
+        "OP_5(6,7,4)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "-R2 + R3",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R2*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "-R2 + R3",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "(-R2 + R3)*(Mod(S3, 4093))",
+        "R1": "R1*(Mod(S3, 4093))",
+        "R2": "-R2 + R3",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "(2*R2 - R3)*(Mod(S3, 4093))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S3"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "S_{3} \\equiv 0 \\lor 2 R_{2} - R_{3} \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_052",
+      "pair_id": "LAW_052",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,0,0)",
+        "OP_2(0,1,3)",
+        "OP_7(7,3,6)"
+      ],
+      "instructions_b": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,5)",
+        "OP_1(3,3,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_053",
+      "pair_id": "LAW_053",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S1",
+        "OP_5: Blocked write to protected S4",
+        "OP_11: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_11(0,2,2)",
+        "OP_5(1,6,4)",
+        "OP_5(4,5,6)"
+      ],
+      "instructions_b": [
+        "OP_11(3,5,7)",
+        "OP_7(7,7,1)",
+        "OP_3(2,2,4)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S5 + S6, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R2": "R2*(-Mod(S4, 4093) + Mod(S5 + S6, 4093))",
+        "S7": "-Mod(S1*S7, 4093) + Mod(S7*(S4 + S6), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S1",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "(R_2 \\equiv 0 \\lor S_4 \\equiv S_5 + S_6) \\land (S_7 \\equiv 0 \\lor S_1 \\equiv S_4 + S_6 \\pmod{4093})",
+      "exact_zero_set_ascii": "(R2 == 0 or S4 == S5 + S6) and (S7 == 0 or S1 == S4 + S6)",
+      "exact_zero_set_derivation": "Defects D_R2 = R2*(-S4 + S5 + S6), D_S7 = S7*(-S1 + S4 + S6).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_054",
+      "pair_id": "LAW_054",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S3",
+        "OP_6: Blocked write to protected S1"
+      ],
+      "instructions_a": [
+        "OP_11(3,5,7)",
+        "OP_7(7,7,1)",
+        "OP_3(2,2,4)"
+      ],
+      "instructions_b": [
+        "OP_6(1,4,0)",
+        "OP_6(0,4,2)",
+        "OP_1(3,2,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1 + R2"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R1 + R2*(Mod(S4, 4093))"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R1 + R2"
+      },
+      "coordinate_defects": {
+        "R3": "R2*(Mod(S4, 4093) - 1)",
+        "S7": "Mod(S1*S7, 4093) - Mod(S7*(4092*S0 + S4), 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S0",
+        "S1",
+        "S4",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "(R_2 \\equiv 0 \\lor S_4 \\equiv 1) \\land (S_7 \\equiv 0 \\lor S_4 \\equiv S_0 + S_1 \\pmod{4093})",
+      "exact_zero_set_ascii": "(R2 == 0 or S4 == 1) and (S7 == 0 or S4 == S0 + S1)",
+      "exact_zero_set_derivation": "Defects D_R3 = R2*(S4 - 1), D_S7 = S7*(S0 + S1 - S4).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_055",
+      "pair_id": "LAW_055",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S3",
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_11(3,5,7)",
+        "OP_7(7,7,1)",
+        "OP_3(2,2,4)"
+      ],
+      "instructions_b": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2*(Mod(S4, 4093)) - R3",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2*(Mod(S4, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R2*(Mod(S4, 4093) - 1)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S4"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{2} \\equiv 0 \\lor S_{4} - 1 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_056",
+      "pair_id": "LAW_056",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S3",
+        "OP_3: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_8(3,63,0)",
+        "OP_3(0,2,1)",
+        "OP_10(0,1,0)"
+      ],
+      "instructions_b": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R2*(Mod(S1, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R2*(Mod(S1, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "-R2*Mod(S1, 4093) + 2*R2 - R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S1"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_3 \\equiv R_2(2 - S_1) \\pmod{4093}",
+      "exact_zero_set_ascii": "R3 == R2*(2 - S1)",
+      "exact_zero_set_derivation": "Defect D_R0 = -R2*S1 + 2*R2 - R3 = R2*(2 - S1) - R3.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_057",
+      "pair_id": "LAW_057",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_7: Blocked write to protected S1",
+        "OP_3: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_7(1,1,3)",
+        "OP_10(3,0,0)",
+        "OP_3(0,3,4)"
+      ],
+      "instructions_b": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R3*(Mod(S4, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R3*(Mod(S4, 4093))",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R2 - R3*Mod(S4, 4093) - R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3",
+        "S4"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "2 R_2 \\equiv R_3(S_4 + 1) \\pmod{4093}",
+      "exact_zero_set_ascii": "2*R2 == R3*(S4 + 1)",
+      "exact_zero_set_derivation": "Defect D_R0 = 2*R2 - R3*(S4 + 1).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_058",
+      "pair_id": "LAW_058",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S1"
+      ],
+      "instructions_a": [
+        "OP_6(1,4,0)",
+        "OP_6(0,4,2)",
+        "OP_1(3,2,1)"
+      ],
+      "instructions_b": [
+        "OP_3(2,0,7)",
+        "OP_3(2,0,7)",
+        "OP_10(3,3,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1 + R2"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R1 + R2"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R0*(Mod(S7, 4093)) + R1"
+      },
+      "coordinate_defects": {
+        "R3": "-R0*Mod(S7, 4093) + R2"
+      },
+      "exact_sensitivity_support": [
+        "R0",
+        "R2",
+        "S7"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_0 S_7 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R0 * S7 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R0 * S7 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_059",
+      "pair_id": "LAW_059",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_5(7,4,1)",
+        "OP_3(3,2,5)",
+        "OP_5(7,0,1)"
+      ],
+      "instructions_b": [
+        "OP_6(3,5,3)",
+        "OP_4(0,2,0)",
+        "OP_6(5,3,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(S5, 4093))"
+      },
+      "symbolic_transition_b": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(S5, 4093))"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(4092*S0 + 4092*S3 + S5, 4093))"
+      },
+      "coordinate_defects": {
+        "R3": "R2*(Mod(S5, 4093) - Mod(4092*S0 + 4092*S3 + S5, 4093))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S0",
+        "S3",
+        "S5"
+      ],
+      "condition_family": "DISJUNCTIVE_ZERO_SET",
+      "exact_zero_set_predicate_latex": "R_{2} \\equiv 0 \\lor S_{0} + S_{3} \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "Union of coordinate hyperplanes",
+      "exact_zero_set_derivation": "Defect factors into a product of coordinate hyperplanes, forming a reducible algebraic variety.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_060",
+      "pair_id": "LAW_060",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "COMPLIANT",
+      "contract_b_blocked_writes": [],
+      "instructions_a": [
+        "OP_5(7,4,1)",
+        "OP_3(3,2,5)",
+        "OP_5(7,0,1)"
+      ],
+      "instructions_b": [
+        "OP_2(3,2,2)",
+        "OP_8(5,75,0)",
+        "OP_10(3,5,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2*(Mod(S5, 4093))"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "75*R2"
+      },
+      "coordinate_defects": {
+        "R3": "-75*R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\land R_3 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = 0 and R3 = 0",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R2 = 0 and R3 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_061",
+      "pair_id": "LAW_061",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_3(2,0,7)",
+        "OP_3(2,0,7)",
+        "OP_10(3,3,0)"
+      ],
+      "instructions_b": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,5)",
+        "OP_1(3,3,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R0*(Mod(S7, 4093)) + R3"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R2 + R3"
+      },
+      "coordinate_defects": {
+        "R3": "R0*(Mod(S7, 4093)) - R2"
+      },
+      "exact_sensitivity_support": [
+        "R0",
+        "R2",
+        "S7"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_0 S_7 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R0 * S7 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R0 * S7 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_062",
+      "pair_id": "LAW_062",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_3(2,0,7)",
+        "OP_3(2,0,7)",
+        "OP_10(3,3,0)"
+      ],
+      "instructions_b": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R0*(Mod(S7, 4093)) - R3",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "(2*R2 - R3)*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R0*(Mod(S7, 4093)) - 2*R2",
+        "R2": "(R0 - 2*R2 + R3)*(Mod(S7, 4093))"
+      },
+      "exact_sensitivity_support": [
+        "R0",
+        "R2",
+        "R3",
+        "S7"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_0 S_7 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R0 * S7 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R0 * S7 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_063",
+      "pair_id": "LAW_063",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S1"
+      ],
+      "instructions_a": [
+        "OP_3(2,0,7)",
+        "OP_3(2,0,7)",
+        "OP_10(3,3,0)"
+      ],
+      "instructions_b": [
+        "OP_6(1,4,0)",
+        "OP_6(0,4,3)",
+        "OP_1(3,2,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R1 + R2"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R0*(Mod(S7, 4093)) + R1"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R1 + R2"
+      },
+      "coordinate_defects": {
+        "R3": "R0*(Mod(S7, 4093)) - R2"
+      },
+      "exact_sensitivity_support": [
+        "R0",
+        "R2",
+        "S7"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_0 S_7 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R0 * S7 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R0 * S7 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_064",
+      "pair_id": "LAW_064",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_3(2,0,7)",
+        "OP_3(2,0,7)",
+        "OP_10(3,3,0)"
+      ],
+      "instructions_b": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,2)",
+        "OP_1(3,3,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R0*(Mod(S7, 4093)) + R3"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R0*(Mod(S7, 4093))",
+        "R3": "R2 + R3"
+      },
+      "coordinate_defects": {
+        "R3": "R0*(Mod(S7, 4093)) - R2"
+      },
+      "exact_sensitivity_support": [
+        "R0",
+        "R2",
+        "S7"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_0 S_7 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R0 * S7 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R0 * S7 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_B_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": false,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": true,
+          "escapes_on_b": false,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_065",
+      "pair_id": "LAW_065",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S2",
+        "OP_2: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,5)",
+        "OP_1(3,3,2)"
+      ],
+      "instructions_b": [
+        "OP_2(3,0,0)",
+        "OP_2(0,1,3)",
+        "OP_7(7,3,3)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_066",
+      "pair_id": "LAW_066",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_6: Blocked write to protected S3",
+        "OP_4: Blocked write to protected R0",
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_6(3,5,3)",
+        "OP_4(0,2,0)",
+        "OP_6(5,3,0)"
+      ],
+      "instructions_b": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R2",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "3*R2 - R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_3 \\equiv 3 R_2 \\pmod{4093}",
+      "exact_zero_set_ascii": "R3 = 3*R2 (mod 4093)",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R3 = 3*R2 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_067",
+      "pair_id": "LAW_067",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0",
+        "OP_6: Blocked write to protected S4"
+      ],
+      "instructions_a": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "instructions_b": [
+        "OP_2(2,0,2)",
+        "OP_1(2,3,3)",
+        "OP_6(4,2,3)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "2*R3",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "2*R3",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "3*R3",
+        "R1": "R1",
+        "R2": "2*R3",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R2 - 4*R3"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "R3"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 2 R_3 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = 2*R3 (mod 4093)",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R2 = 2*R3 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_068",
+      "pair_id": "LAW_068",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0"
+      ],
+      "instructions_a": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "instructions_b": [
+        "OP_10(3,3,1)",
+        "OP_10(1,1,0)",
+        "OP_3(2,1,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R1*(Mod(S0, 4093))",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R1*(Mod(S0, 4093))",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "2*R1*(Mod(S0, 4093)) - R3",
+        "R1": "R1",
+        "R2": "R1*(Mod(S0, 4093))",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "-2*R1*Mod(S0, 4093) + 2*R2"
+      },
+      "exact_sensitivity_support": [
+        "R1",
+        "R2",
+        "S0"
+      ],
+      "condition_family": "BILINEAR_SCRATCH_SCALAR",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv R_1 S_0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = R1 * S0 (mod 4093)",
+      "exact_zero_set_derivation": "Bilinear coupling between group scratch register and scalar registers: R2 = R1 * S0 (mod 4093).",
+      "manifold_preservation": {
+        "preservation_category": "SEMI_INVARIANT_DOMAIN_A_ONLY",
+        "is_common_invariant": false,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": false,
+        "supports_unbounded_composition": false,
+        "escape_witness": {
+          "escapes_on_a": false,
+          "escapes_on_b": true,
+          "sample_escape_state": "sigma in M leaves terminal scratch != 0"
+        }
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_069",
+      "pair_id": "LAW_069",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0",
+        "OP_5: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "instructions_b": [
+        "OP_2(3,3,2)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "composition_ba": {
+        "R0": "3*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "coordinate_defects": {
+        "R0": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_070",
+      "pair_id": "LAW_070",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_1: Blocked write to protected R0",
+        "OP_5: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_10(0,0,0)",
+        "OP_2(0,2,3)",
+        "OP_1(0,0,2)"
+      ],
+      "instructions_b": [
+        "OP_5(2,5,1)",
+        "OP_2(2,3,3)",
+        "OP_5(6,7,4)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ab": {
+        "R0": "2*R2 - R3",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "-R3",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "coordinate_defects": {
+        "R0": "2*R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "LINEAR_SCRATCH_CONGRUENCE",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\land R_3 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 = 0 and R3 = 0",
+      "exact_zero_set_derivation": "Linear congruence in group scratch registers: R2 = 0 and R3 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_071",
+      "pair_id": "LAW_071",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,2,2)",
+        "OP_8(5,75,0)",
+        "OP_10(3,5,0)"
+      ],
+      "instructions_b": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,2)",
+        "OP_1(3,3,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_072",
+      "pair_id": "LAW_072",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,0,0)",
+        "OP_2(0,1,3)",
+        "OP_7(7,3,3)"
+      ],
+      "instructions_b": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,2)",
+        "OP_1(3,3,2)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_073",
+      "pair_id": "LAW_073",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_2: Blocked write to protected R0",
+        "OP_11: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,0,0)",
+        "OP_2(0,1,3)",
+        "OP_7(7,3,3)"
+      ],
+      "instructions_b": [
+        "OP_1(3,2,3)",
+        "OP_11(2,7,3)",
+        "OP_10(0,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R1",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2",
+        "S2": "-M0(Mod(S7, 64)) + M0(Mod(Mod((Mod(S3, 4093))**2, 4093), 64))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S3",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093} \\land M_0(S_3^2 \\pmod{64}) = M_0(S_7 \\pmod{64})",
+      "exact_zero_set_ascii": "R2 == 0 and M0(S3^2 % 64) == M0(S7 % 64)",
+      "exact_zero_set_derivation": "Defect D_R3 = +-R2, and scalar defect D_S2 matches initial memory lookup difference.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_074",
+      "pair_id": "LAW_074",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S3",
+        "OP_5: Blocked write to protected S3"
+      ],
+      "instructions_a": [
+        "OP_2(3,3,2)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,1)"
+      ],
+      "instructions_b": [
+        "OP_2(3,3,3)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "-R2"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_075",
+      "pair_id": "LAW_075",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_8: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_8(2,19,0)",
+        "OP_6(0,3,2)",
+        "OP_1(3,3,2)"
+      ],
+      "instructions_b": [
+        "OP_2(3,2,2)",
+        "OP_8(5,75,0)",
+        "OP_10(3,5,1)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "coordinate_defects": {
+        "R3": "-R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_076",
+      "pair_id": "LAW_076",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_11: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,2,2)",
+        "OP_8(5,75,0)",
+        "OP_10(3,5,1)"
+      ],
+      "instructions_b": [
+        "OP_1(3,2,3)",
+        "OP_11(2,7,3)",
+        "OP_10(0,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2"
+      },
+      "exact_sensitivity_support": [
+        "R2"
+      ],
+      "condition_family": "PURE_COORDINATE_ZERO",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0",
+      "exact_zero_set_derivation": "Coordinate defect is strictly c * R2 with c != 0 (mod 4093). Zero set is unconditionally R2 = 0.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_UNIVERSAL_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_077",
+      "pair_id": "LAW_077",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S2",
+        "OP_11: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_5(2,5,1)",
+        "OP_2(2,3,3)",
+        "OP_5(6,7,4)"
+      ],
+      "instructions_b": [
+        "OP_1(3,2,3)",
+        "OP_11(2,7,3)",
+        "OP_10(0,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R3"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "0",
+        "R3": "R2 + R3"
+      },
+      "coordinate_defects": {
+        "R3": "-R2",
+        "S2": "M0(Mod(S7, 64)) - Mod(S1 + S5, 4093)"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S1",
+        "S5",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093} \\land S_1 + S_5 \\equiv M_0(S_7 \\pmod{64}) \\pmod{4093}",
+      "exact_zero_set_ascii": "R2 == 0 and S1 + S5 == M0(S7 % 64)",
+      "exact_zero_set_derivation": "Defect D_R3 = +-R2, and scalar defect D_S2 matches initial memory lookup difference.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    },
+    {
+      "theorem_id": "THM_LAW_078",
+      "pair_id": "LAW_078",
+      "applicable_execution_contract": "CONTRACT_A_PERMISSIVE",
+      "contract_b_status": "SUPPRESSED_UNDER_CONTRACT_B",
+      "contract_b_blocked_writes": [
+        "OP_5: Blocked write to protected S3",
+        "OP_11: Blocked write to protected S2"
+      ],
+      "instructions_a": [
+        "OP_2(3,3,3)",
+        "OP_5(3,4,1)",
+        "OP_8(7,56,0)"
+      ],
+      "instructions_b": [
+        "OP_1(3,2,3)",
+        "OP_11(2,7,3)",
+        "OP_10(0,0,0)"
+      ],
+      "symbolic_transition_a": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "symbolic_transition_b": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2 + R3"
+      },
+      "composition_ab": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "R2"
+      },
+      "composition_ba": {
+        "R0": "R0",
+        "R1": "R1",
+        "R2": "R2",
+        "R3": "0"
+      },
+      "coordinate_defects": {
+        "R3": "R2",
+        "S2": "M0(56) - M0(Mod(S7, 64))"
+      },
+      "exact_sensitivity_support": [
+        "R2",
+        "S7"
+      ],
+      "condition_family": "CONTEXT_CONSTRAINED_MANIFOLD",
+      "exact_zero_set_predicate_latex": "R_2 \\equiv 0 \\pmod{4093} \\land M_0(S_7 \\pmod{64}) = M_0(56)",
+      "exact_zero_set_ascii": "R2 == 0 and M0(S7 % 64) == M0(56)",
+      "exact_zero_set_derivation": "Defect D_R3 = +-R2, and scalar defect D_S2 matches initial memory lookup difference.",
+      "manifold_preservation": {
+        "preservation_category": "COMMON_INVARIANT_MANIFOLD",
+        "is_common_invariant": true,
+        "preserved_by_transformation_A": true,
+        "preserved_by_transformation_B": true,
+        "supports_unbounded_composition": true,
+        "escape_witness": null
+      },
+      "word_reordering_verified": true,
+      "certified_epistemic_status": "CERTIFIED_CONTEXT_CONSTRAINED_EXACT"
+    }
+  ]
+}

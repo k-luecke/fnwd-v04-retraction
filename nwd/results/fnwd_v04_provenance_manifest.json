@@ -1,0 +1,26 @@
+{
+  "manifest_timestamp_iso": "2026-11-14T23:04:36Z",
+  "git_revision": "V0.4-HEAD",
+  "python_version": "3.12.3",
+  "platform_info": "Linux 6.6.87.2-microsoft-standard-WSL2",
+  "input_catalog_hashes": {
+    "idempotents": "529016c3954f6fdf46311c2a0e0463d413bb921ee544742c85cd5c01bb05e472",
+    "commutators": "01a0c025668b212894d5640de0f2adca093b0bd248836493b87dc6635a5c3d91",
+    "retractions": "68f936c08af3da5cfa0500f2ba9058cbf025f69edf715ce369de50d903fbbdc6"
+  },
+  "code_file_hashes": {
+    "nwd/atlas/schema_v04.py": "075929bac5ceb798a608e21986822852fe05bad8085317998cc4158bc2b8a8a2",
+    "nwd/atlas/formal_semantics.py": "0270c320a090720489e7e0df4d8338bacbf61ee7d9d719b6a14924495fe5c395",
+    "nwd/atlas/linearizability_oracle.py": "71993acba36552c922f6578c078585aca14ba0f80d4254550d8e5b6d65ae87ba",
+    "nwd/atlas/causal_ablation.py": "fdcb80ec5df3306b48de6875974b10c1e19d5257507d1f8799037bbdb90bd807",
+    "nwd/atlas/domain_crdt.py": "0fa6cb50be0b9d877a1728262cf1b109694a00778bcbb215d69055ffe7d31e52",
+    "nwd/atlas/domain_trie.py": "aac1622c46d15d61b8af59b83ce212dcf3a843979221d6b555924a1b3a5eb520",
+    "nwd/atlas/paired_statistics.py": "60b2c50871cc2083c8bf4eac045a2f2a60873e7ac1c6c92101f0eb39df2a3a9a",
+    "nwd/atlas/blind_discovery.py": "dd79b3839d43b11fdb97fc23fb72b6984da9e54f6a488f21725a1f9ea9f46bdc",
+    "nwd/atlas/run_atlas_v04.py": "6c4846cac8c4fd3cabe4f8b7b76d4bc41e2b7d615da08d01f4ac7fddae58d261"
+  },
+  "output_artifact_hashes": {
+    "nwd/results/fnwd_v04_raw_experimental_results.json": "eeabcf0f0e10b5287c74f3f3cc29d30d0ee56f6fe214e50eab7fc6870e77ade3"
+  },
+  "all_seeds_reproducible": true
+}

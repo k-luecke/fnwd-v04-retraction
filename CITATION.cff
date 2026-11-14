@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this research manuscript, algebraic catalogs, or verification suite, please cite it as below."
+type: software
+title: "Autonomous Discovery of Idempotent State-Space Retractions and Conditional Commutation Manifolds (FNWD v0.4)"
+authors:
+  - family-names: "Luecke"
+    given-names: "Kyle W."
+    affiliation: "Driftbound Labs"
+    orcid: "https://orcid.org/0009-0008-0202-7852"
+    email: "admin@driftboundlabs.com"
+version: "0.4.0"
+date-released: "2026-10-15"
+license: "MIT"
+url: "https://driftboundlabs.com/papers.html"
+repository-code: "https://github.com/k-luecke/fnwd-v04-retraction"
+keywords:
+  - "idempotent retraction"
+  - "conditional commutativity"
+  - "linearizability"
+  - "projection poset"
+  - "CRDT"
+  - "program synthesis"
